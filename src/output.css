@@ -629,6 +629,11 @@ video {
   background-color: rgb(3 14 18 / var(--tw-bg-opacity));
 }
 
+.bg-c-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -637,8 +642,8 @@ video {
   vertical-align: middle;
 }
 
-.font-Audiowide {
-  font-family: Audiowide, cursive;
+.font-Meddon {
+  font-family: Meddon, cursive;
 }
 
 .font-Nanum {
@@ -649,52 +654,8 @@ video {
   font-family: Aboreto, cursive;
 }
 
-.font-Cinzel {
-  font-family: Cinzel, serif;
-}
-
-.font-Cutive {
-  font-family: Cutive Mono, monospace;
-}
-
-.font-Eagle {
-  font-family: Eagle Lake, cursive;
-}
-
-.font-Engage {
-  font-family: Engagement, cursive;
-}
-
-.font-Ephesis {
-  font-family: Ephesis, cursive;
-}
-
-.font-Gravitas {
-  font-family: Gravitas One, cursive;
-}
-
-.font-Open {
-  font-family: Open Sans, sans-serif;
-}
-
-.font-Race {
-  font-family: Racing Sans One, cursive;
-}
-
-.font-Rom {
-  font-family: Rommetto One, cursive;
-}
-
 .font-Josefin {
   font-family: Josefin Sans, sans-serif;
-}
-
-.font-Bhu {
-  font-family: BhuTuko Expanded One, cursive;
-}
-
-.font-Meddon {
-  font-family: Meddon, cursive;
 }
 
 .text-\[72px\] {
