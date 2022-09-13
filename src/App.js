@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './assets/images/logo.png';
 import About from './components/About';
-// import Navigation from './components/Navigation';
+import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
 // import Resume from './components/Resume';
 import './App.css';
@@ -24,6 +24,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <header>
+        <Navigation></Navigation>
+      </header>
       <main>
         <About></About>
         {/* <Navigation></Navigation>

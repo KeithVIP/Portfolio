@@ -34,6 +34,7 @@ module.exports = {
       Open: ['Open Sans', 'sans-serif'],
       Race: ['Racing Sans One', 'cursive'],
       Rom: ['Rommetto One', 'cursive'],
+      Cinzel: ['Cinzel', 'serif'],
     },
     fontSize: {
       '7xl': '5rem'
