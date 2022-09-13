@@ -3,6 +3,7 @@ import React from 'react';
 function Navigation() {
     return (
         <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
+            <img src="src/assets/images/logo.png" />
             <a href="#about">
                 <span>About</span>
             </a>
