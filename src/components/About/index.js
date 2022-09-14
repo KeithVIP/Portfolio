@@ -11,8 +11,8 @@ function About() {
                     in
                     software development.
                 </p>
-                <p className="font-Aboreto text-[48px] font-semibold">
-                    available for hire
+                <p className="font-Nanum text-[48px] font-semibold">
+                    AVAILABLE FOR HIRE
                 </p>
             </div>
         </section>

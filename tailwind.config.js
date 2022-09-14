@@ -17,6 +17,9 @@ module.exports = {
     backgroundcolor: {
       'c-transparent-black': (0, 0, 0, 0.6)
     },
+    backgroundImage: {
+      'logo': "url('')"
+    },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],
       Audiowide: ['Audiowide', 'cursive'],
