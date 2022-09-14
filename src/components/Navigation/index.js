@@ -1,26 +1,34 @@
 import React from 'react';
 
-function Navigation() {
+const Navigation = (props) => {
+    const {
+        resumeSelected,
+        setResumeSelected,
+    } = props;
+
     return (
         <section>
+            <div>
+                <a href='/'>
+                    Logo Here
+                    <img src=''
+                        alt="" />
+                </a>
+            </div>
             <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
-                <div>
-                    <a href='/'>
-                        <img src='/'
-                            alt="" />
-                    </a>
-                </div>
-                <a href="#about">
-                    <span>About</span>
-                </a>
-                <a href="#portfolio">
-                    <span>Portfolio</span>
-                </a>
-                <a href="#resume">
-                    <span>Resume</span>
-                </a>
+                <ul>
+                    <li>
+                        <span>About</span>
+                    </li>
+                    <li>
+                        <span>Portfolio</span>
+                    </li>
+                    <li>
+                        <span onClick={() => setResumeSelected(true)}>Resume</span>
+                    </li>
+                </ul>
             </nav>
-        </section >
+        </section>
     );
 };
 
