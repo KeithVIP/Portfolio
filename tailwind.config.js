@@ -12,10 +12,14 @@ module.exports = {
       'c-black': '#030e12',
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
-      'c-transparent-black': (0, 0, 0, 0.6)
     },
-    backgroundcolor: {
-      'c-transparent-black': (0, 0, 0, 0.6)
+    backgroundColor: {
+      'c-yellow': '#fcde67',
+      'c-blue': '#5bccf6',
+      'c-black': '#030e12',
+      'c-gray': '#363636',
+      'c-white': '#FFFFFF',
+      'c-tblack': 'rgba(0, 0, 0, 0.6)'
     },
     backgroundImage: {
       'logo': "url('')"
@@ -31,13 +35,13 @@ module.exports = {
       Gravitas: ['Gravitas One', 'cursive'],
       Gwen: ['Gwendolyn', 'cursive'],
       Josefin: ['Josefin Sans', 'sans-serif'],
+      League: ['League Spartan', 'sans-serif'],
       Lora: ['Lora', 'serif'],
       Meddon: ['Meddon', 'cursive'],
       Nanum: ['Nanum Gothic', 'sans-serif'],
       Open: ['Open Sans', 'sans-serif'],
       Race: ['Racing Sans One', 'cursive'],
       Rom: ['Rommetto One', 'cursive'],
-      Cinzel: ['Cinzel', 'serif'],
     },
     fontSize: {
       '7xl': '5rem'

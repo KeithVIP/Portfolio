@@ -7,15 +7,18 @@ const Navigation = (props) => {
     } = props;
 
     return (
-        <header>
-            <div>
+        <header id='Navigation'>
+            <div id='container' className='League flex pl-10'>
                 <a href='/'>
-                    Logo Here
-                    <img src=''></img>
+                    <img
+                        src={require('../../assets/images/logo3.png')}
+                        alt="logo"
+                        className=""
+                    />
                 </a>
             </div>
             <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
-                <ul>
+                <ul className="flex basis-1/3">
                     <li>
                         <span onClick={() => setResumeSelected(false)}>About</span>
                     </li>
