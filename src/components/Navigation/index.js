@@ -7,18 +7,17 @@ const Navigation = (props) => {
     } = props;
 
     return (
-        <section>
+        <header>
             <div>
                 <a href='/'>
                     Logo Here
-                    <img src=''
-                        alt="" />
+                    <img src=''></img>
                 </a>
             </div>
             <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
                 <ul>
                     <li>
-                        <span>About</span>
+                        <span onClick={() => setResumeSelected(false)}>About</span>
                     </li>
                     <li>
                         <span>Portfolio</span>
@@ -28,7 +27,7 @@ const Navigation = (props) => {
                     </li>
                 </ul>
             </nav>
-        </section>
+        </header>
     );
 };
 

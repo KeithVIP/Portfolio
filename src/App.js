@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import About from './components/About';
+import Intro from './components/intro';
 import Navigation from './components/Navigation';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
 import './App.css';
@@ -9,24 +10,28 @@ import './output.css';
 
 function App() {
   const [resumeSelected, setResumeSelected] = useState(false);
+  const [introRender, setIntroRender] = useState(true);
 
   return (
     <div>
-      <header>
-        <Navigation
-          resumeSelected={resumeSelected}
-          setResumeSelected={setResumeSelected}
-        ></Navigation>
-      </header>
-      <main>
-        {!resumeSelected ? (
-          <>
-            <About></About>
-          </>
-        ) : (
-          <Resume></Resume>
-        )}
-      </main>
+      {!introRender ? (
+        <main>
+          <Navigation
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
+          ></Navigation>
+          {!resumeSelected ? (
+            <>
+              <About></About>
+              <Projects></Projects>
+            </>
+          ) : (
+            <Resume></Resume>
+          )}
+        </main>
+      ) : (
+        <Intro></Intro>
+      )}
     </div>
   );
 }
