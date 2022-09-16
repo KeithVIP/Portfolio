@@ -678,11 +678,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-c-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 222 103 / var(--tw-bg-opacity));
-}
-
 .bg-c-tblack {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -694,14 +689,6 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .pl-10 {
@@ -799,11 +786,5 @@ video {
 
   .lg\:opacity-0 {
     opacity: 0;
-  }
-
-  .lg\:hover\:translate-y-0:hover {
-    --tw-translate-y: 0px;
-    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
