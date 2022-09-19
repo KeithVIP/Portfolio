@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Resume from '../Resume';
 
 const Navigation = (props) => {
     const {
@@ -7,45 +8,54 @@ const Navigation = (props) => {
         portfolioSelected,
         setPortfolioSelected,
         resumeSelected,
-        setResumeSelected,
+        setResumeSelected
     } = props;
+    const [isResumeOpen, setIsResumeOpen] = useState(false);
+    const toggleResume = () => {
+        setIsResumeOpen(!isResumeOpen);
+    };
 
     return (
         <header id='Navigation'>
-            <div id='container' className='League flex pl-10'>
-                <a href='/'>
-                    <img
-                        src={require('../../assets/images/logo3.png')}
-                        alt="logo"
-                        className=""
-                    />
-                </a>
+            {isResumeOpen && (
+                <Resume
+                    onClose={toggleResume}
+                ></Resume>
+            )}
+            <div id='container' className='League flex'>
+                <div id='subcontainer'>
+                    <a href='/'>
+                        <img
+                            src={require(`../../assets/images/logo3.png`)}
+                            alt="logo"
+                            className="w-100 h-100"
+                        />
+                    </a>
+                </div>
+                <nav id='subcontainer'>
+                    <ul className='flex'>
+                        <li>
+                            <span onClick={() => {
+                                setAboutSelected(true)
+                                setPortfolioSelected(false)
+                                setResumeSelected(false)
+                            }}>About</span>
+                        </li>
+                        <li>
+                            <span onClick={() => {
+                                setAboutSelected(false)
+                                setPortfolioSelected(true)
+                                setResumeSelected(false)
+                            }}>Portfolio</span>
+                        </li>
+                        <li>
+                            <span onClick={() => {
+                                toggleResume(true)
+                            }}>Resume</span>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
-                <ul className="flex basis-1/3">
-                    <li>
-                        <span onClick={() => {
-                            setAboutSelected(true)
-                            setPortfolioSelected(false)
-                            setResumeSelected(false)
-                        }}>About</span>
-                    </li>
-                    <li>
-                        <span onClick={() => {
-                            setAboutSelected(false)
-                            setPortfolioSelected(true)
-                            setResumeSelected(false)
-                        }}>Portfolio</span>
-                    </li>
-                    <li>
-                        <span onClick={() => {
-                            setAboutSelected(false)
-                            setPortfolioSelected(false)
-                            setResumeSelected(true)
-                        }}>Resume</span>
-                    </li>
-                </ul>
-            </nav>
         </header>
     );
 };

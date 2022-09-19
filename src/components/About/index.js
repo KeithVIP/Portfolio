@@ -11,9 +11,6 @@ const About = () => {
                     in
                     software development.
                 </p>
-                <p className="font-Nanum text-[48px] font-semibold">
-                    AVAILABLE FOR HIRE
-                </p>
             </div>
         </section>
     );
