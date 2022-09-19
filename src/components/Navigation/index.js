@@ -11,7 +11,7 @@ const Navigation = (props) => {
         setResumeSelected
     } = props;
     const [isResumeOpen, setIsResumeOpen] = useState(false);
-    const toggleResume = () => {
+    const toggleResume = (resume) => {
         setIsResumeOpen(!isResumeOpen);
     };
 
@@ -50,7 +50,7 @@ const Navigation = (props) => {
                         </li>
                         <li>
                             <span onClick={() => {
-                                toggleResume(true)
+                                toggleResume(false)
                             }}>Resume</span>
                         </li>
                     </ul>
