@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
+import Featured from './components/Featured';
 // import Projects from './components/Projects';
 import Resume from './components/Resume';
 // import logo from './assets/images/logo3.png';
@@ -10,6 +11,8 @@ import './output.css';
 import Portfolio from './components/Portfolio';
 import { useTimeoutFn } from 'react-use';
 import { Transition } from '@headlessui/react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
@@ -52,7 +55,9 @@ function App() {
           {aboutSelected ? (
             <About></About>
           ) : (
-            <Portfolio></Portfolio>
+            <Featured
+              className='z-0'>
+            </Featured>
           )
           }
         </main>
