@@ -9,15 +9,8 @@ const About = () => {
         });
     }, []);
     return (
-        <section id='about' className='min-h-screen bg-c-blue flex items-center'>
+        <section id='about' className='min-h-screen bg-c-blue flex items-center animate-fade-in-down'>
             <div id='container'
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-delay=""
-                data-aos-anchor=""
-                data-aos-anchor-placement=""
-                dara-aos-once=""
                 className='w-full bg-c-black text-c-white leading-loose flex flex-col items-center'>
                 <h1 className='font-Meddon text-[72px]'>Keith Yanosy</h1>
                 <p className="font-Nanum text-[20px] text-justify max-w-sm md:max-w-md lg:max-w-lg">

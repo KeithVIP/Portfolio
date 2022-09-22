@@ -11,8 +11,8 @@ import './output.css';
 import Portfolio from './components/Portfolio';
 import { useTimeoutFn } from 'react-use';
 import { Transition } from '@headlessui/react';
-import AOS from 'aos';
-import "aos/dist/aos.css";
+// import AOS from 'aos';
+// import "aos/dist/aos.css";
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
