@@ -28,7 +28,7 @@ const Navigation = (props) => {
                         <img
                             src={require(`../../assets/images/logo3.png`)}
                             alt="logo"
-                            className="w-100 h-100"
+                            className="w-100 h-100 animate-icon"
                         />
                     </a>
                 </div>
