@@ -8,7 +8,7 @@ const Projects = () => {
                 <li id='subcontainer' className='bg-c-black p-2 w-full'>
                     <div id='project' className='relative p-2 flex flex-col justify-center items-center'>
                         <img
-                            src={require(`../../assets/thumbnails/Woofify.gif`)}
+                            src={require(`../../assets/thumbnails/Woofify2.gif`)}
                             alt="woofify" className="w-100 h-100"
                         />
                         <section className="absolute bg-c-tblack text-c-white top-0 left-0 w-full h-full flex flex-col justify-center items-center opacity-0 hover:opacity-100 translate-y-20 hover:translate-y-0 duration-[2000ms]">
@@ -33,7 +33,7 @@ const Projects = () => {
                     <div id='project' className='relative p-2 flex flex-col justify-center items-center'>
                         <a href="">
                             <img
-                                src={require(`../../assets/thumbnails/Woofify.gif`)}
+                                src={require(`../../assets/thumbnails/Woofify2.gif`)}
                                 alt="woofify" className="w-100 h-100"
                             />
                             <section className="absolute bg-c-tblack text-c-white top-0 left-0 w-full h-full flex flex-col justify-center items-center opacity-0 hover:opacity-100 translate-y-20 hover:translate-y-0 duration-[2000ms]">
@@ -55,7 +55,7 @@ const Projects = () => {
                     <div id='project' className='relative p-2 flex flex-col justify-center items-center'>
                         <a href="">
                             <img
-                                src={require(`../../assets/thumbnails/Woofify.gif`)}
+                                src={require(`../../assets/thumbnails/Woofify2.gif`)}
                                 alt="woofify" className="w-100 h-100"
                             />
                             <section className="absolute bg-c-tblack text-c-white top-0 left-0 w-full h-full flex flex-col justify-center items-center opacity-0 hover:opacity-100 translate-y-20 hover:translate-y-0 duration-[2000ms]">

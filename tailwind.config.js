@@ -11,7 +11,8 @@ module.exports = {
       'c-blue': '#5bccf6',
       'c-black': '#030e12',
       'c-gray': '#363636',
-      'c-white': '#FFFFFF'
+      'c-white': '#FFFFFF',
+      'c-red': '#F9403A',
     },
     backgroundColor: {
       'c-yellow': '#fcde67',

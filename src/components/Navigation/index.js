@@ -35,26 +35,32 @@ const Navigation = (props) => {
                 <nav id='subcontainer' className='bg-c-yellow w-full'>
                     <ul className='flex justify-around'>
                         <li className="flex">
-                            <span onClick={() => {
-                                setAboutSelected(true)
-                                setPortfolioSelected(false)
-                                setResumeSelected(false)
-                            }}
-                                className="animate-fade1">About</span>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setAboutSelected(true)
+                                    setPortfolioSelected(false)
+                                    setResumeSelected(false)
+                                }}
+                                className="animate-fade1 hover:text-c-blue active:text-c-white cursor-pointer">About</button>
                         </li>
                         <li className="flex">
-                            <span onClick={() => {
-                                setAboutSelected(false)
-                                setPortfolioSelected(true)
-                                setResumeSelected(false)
-                            }}
-                                className="animate-fade2">Portfolio</span>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setAboutSelected(false)
+                                    setPortfolioSelected(true)
+                                    setResumeSelected(false)
+                                }}
+                                className="animate-fade2 hover:text-c-blue active:text-c-white cursor-pointer">Portfolio</button>
                         </li>
                         <li className="flex">
-                            <span onClick={() => {
-                                toggleResume(false)
-                            }}
-                                className="animate-fade3">Resume</span>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    toggleResume(false)
+                                }}
+                                className="animate-fade3 hover:text-c-blue active:text-c-white cursor-pointer">Resume</button>
                         </li>
                     </ul>
                 </nav>
