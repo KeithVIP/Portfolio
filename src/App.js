@@ -3,6 +3,7 @@ import About from './components/About';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
 import Featured from './components/Featured';
+import Footer from './components/Footer';
 // import Projects from './components/Projects';
 import Resume from './components/Resume';
 // import logo from './assets/images/logo3.png';
@@ -43,7 +44,7 @@ function App() {
         /*  </Transition> */
 
       ) : (
-        <main>
+        <div>
           <Navigation
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
@@ -52,15 +53,20 @@ function App() {
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
           ></Navigation>
-          {aboutSelected ? (
-            <About></About>
-          ) : (
-            <Featured
-              className='z-0'>
-            </Featured>
-          )
-          }
-        </main>
+          <main>
+            {aboutSelected ? (
+              <About></About>
+            ) : (
+              <Featured
+                className='z-0'>
+              </Featured>
+            )
+            }
+          </main>
+          <Footer
+            className='z-10'
+          ></Footer>
+        </div>
       )}
     </div>
   );

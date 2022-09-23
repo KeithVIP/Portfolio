@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Resume from '../Resume';
+import { Bars3Icon } from '@heroicons/react/24/solid';
 
 const Navigation = (props) => {
     const {
@@ -33,6 +34,7 @@ const Navigation = (props) => {
                     </a>
                 </div>
                 <nav id='subcontainer' className='bg-c-yellow w-full'>
+                    <Bars3Icon className='w-6 h-6' />
                     <ul className='flex justify-around'>
                         <li className="flex">
                             <button
