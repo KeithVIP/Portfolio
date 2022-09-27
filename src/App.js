@@ -4,6 +4,7 @@ import Featured from './components/Featured';
 import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
+import Nav from './components/Nav';
 // import Projects from './components/Projects';
 import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
@@ -19,6 +20,7 @@ const App = () => {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMenuActive, setIsMenuActive] = useState(true);
   /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
 
   useEffect(() => {
@@ -44,14 +46,23 @@ const App = () => {
 
       ) : (
         <div>
-          <Navigation
+          <Nav
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
             portfolioSelected={portfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
-          ></Navigation>
+          >
+          </Nav>
+          {/* <Navigation
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
+            portfolioSelected={portfolioSelected}
+            setPortfolioSelected={setPortfolioSelected}
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
+          ></Navigation> */}
           <main>
             {aboutSelected ? (
               <>
@@ -69,8 +80,9 @@ const App = () => {
             className='z-10'
           ></Footer>
         </div>
-      )}
-    </div>
+      )
+      }
+    </div >
   );
 };
 

@@ -104,9 +104,9 @@ const data = [
 
 const TechnologyList = () => {
     return (
-        <section className='bg-c-yellow h-full font-League flex flex-col justify-top items-center'>
+        <section className='h-full font-League flex flex-col justify-top items-center p-10'>
             <h2 className='bg-c-gray font-bold text-7xl'>Technologies</h2>
-            <div className='bg-c-blue w-full grid grid-cols-2 place-items-center'>
+            <div className='bg-c-blue w-full grid grid-cols-3 place-items-center gap-5 max-w-xl'>
                 {data.map(({ id, name, image }) => (
                     <div key={id} className=''>
                         <img
