@@ -29,14 +29,14 @@ const Navigation = (props) => {
                         <img
                             src={require(`../../assets/images/logo3.png`)}
                             alt="logo"
-                            className="w-100 h-100 animate-icon"
+                            className="w-100 h-100 animate-slider1"
                         />
                     </a>
                 </div>
-                <nav id='subcontainer' className='bg-c-yellow w-full'>
-                    <Bars3Icon className='w-6 h-6' />
+                <nav id='menu' className='bg-c-yellow w-full font-League font-bold text-5xl'>
+                    <Bars3Icon className='w-14 h-14 hover:text-c-red active:text-' />
                     <ul className='flex justify-around'>
-                        <li className="flex">
+                        <li className='flex focus:bg-c-blue'>
                             <button
                                 type="button"
                                 onClick={() => {
@@ -44,7 +44,7 @@ const Navigation = (props) => {
                                     setPortfolioSelected(false)
                                     setResumeSelected(false)
                                 }}
-                                className="animate-fade1 hover:text-c-blue active:text-c-white cursor-pointer">About</button>
+                                className="animate-fade1 hover:text-c-blue active:text-c-white font-bold cursor-pointer">About</button>
                         </li>
                         <li className="flex">
                             <button
@@ -54,7 +54,7 @@ const Navigation = (props) => {
                                     setPortfolioSelected(true)
                                     setResumeSelected(false)
                                 }}
-                                className="animate-fade2 hover:text-c-blue active:text-c-white cursor-pointer">Portfolio</button>
+                                className="animate-fade2 hover:text-c-blue active:text-c-white font-bold cursor-pointer">Portfolio</button>
                         </li>
                         <li className="flex">
                             <button
@@ -62,7 +62,7 @@ const Navigation = (props) => {
                                 onClick={() => {
                                     toggleResume(false)
                                 }}
-                                className="animate-fade3 hover:text-c-blue active:text-c-white cursor-pointer">Resume</button>
+                                className="animate-fade3 hover:text-c-blue active:text-c-white font-bold cursor-pointer">Resume</button>
                         </li>
                     </ul>
                 </nav>

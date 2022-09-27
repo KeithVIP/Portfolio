@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
-import Intro from './components/Intro';
-import Navigation from './components/Navigation';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
+import Intro from './components/Intro';
+import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
 import Resume from './components/Resume';
-// import logo from './assets/images/logo3.png';
+// import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
 import Portfolio from './components/Portfolio';
 import { useTimeoutFn } from 'react-use';
 import { Transition } from '@headlessui/react';
-// import AOS from 'aos';
-// import "aos/dist/aos.css";
+import TechnologyList from './components/TechnologyList';
 
-function App() {
+const App = () => {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
@@ -25,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000)
+    }, 1500)
   }, []);
 
   return (
@@ -55,11 +54,14 @@ function App() {
           ></Navigation>
           <main>
             {aboutSelected ? (
-              <About></About>
+              <>
+                <About></About>
+                <TechnologyList></TechnologyList>
+              </>
             ) : (
               <Featured
-                className='z-0'>
-              </Featured>
+                className='z-0'
+              ></Featured>
             )
             }
           </main>
