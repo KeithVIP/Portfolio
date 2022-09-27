@@ -8,14 +8,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 const Resume = ({ onClose }) => {
     return (
         // add Backdrop, somehow
-        <section id='resume' className='z-50 min-h-screen flex justify-center items-center bg-c-tblack absolute w-full font-League'>
+        <section id='resume' className='z-50 min-h-fit flex justify-center items-center bg-c-tblack w-full font-League relative md:fixed top-0 left-0 right-0 h-screen'>
             <div id='resumeContainer' className='bg-c-blue px-5 flex flex-col justify-center items-center max-w-screen-lg'>
                 <button
                     type='button'
                     onClick={onClose} className='font-bold text-xl text-c-gray hover:text-c-red active:text-c-red flex justify-end my-5 w-full'>
                     X
                 </button>
-                <h3 id='title' className='text-7xl flex justify-center'>Resume</h3>
                 <Document file={ResumePDF} className='w-full'>
                     <Page pageNumber={1} />
                 </Document>
