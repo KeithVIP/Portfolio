@@ -7,16 +7,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const Resume = ({ onClose }) => {
     return (
-        // add Backdrop, somehow
-        <section id='resume' className='z-50 min-h-fit flex justify-center items-center bg-c-tblack w-full font-League relative md:fixed top-0 left-0 right-0 h-screen'>
-            <div id='resumeContainer' className='bg-c-blue px-5 flex flex-col justify-center items-center max-w-screen-lg'>
+        <section id='resume' className='z-50 min-h-screen flex justify-center items-center bg-c-tblack w-full font-League fixed top-0 right-0 bottom-0 left-0'>
+            <div id='resumeContainer' className='bg-c-blue max-h-screen max-w-screen px-5 flex flex-col justify-center items-center'>
                 <button
                     type='button'
-                    onClick={onClose} className='font-bold text-xl text-c-gray hover:text-c-red active:text-c-red flex justify-end my-5 w-full'>
+                    onClick={onClose}
+                    className='font-bold text-2xl text-c-gray flex justify-end my-5 w-full hover:text-c-black active:text-c-red'>
                     X
                 </button>
-                <Document file={ResumePDF} className='w-full'>
-                    <Page pageNumber={1} />
+                <Document file={ResumePDF} className={'custom-scroll'}>
+                    <Page pageNumber={1} scale={1.0} />
                 </Document>
                 <div className="bg-c-white hover:bg-c-gray hover:text-c-red font-bold text-xl my-5 p-2 rounded-md">
                     <a
