@@ -107,7 +107,7 @@ const Featured = () => {
                         className='relative right-32 top-28'>
                         <h2 className='flex justify-end text-7xl font-bold'>Woofify</h2>
                         <p className='flex flex-wrap text-justify bg-c-yellow rounded- lg p-3 max-w-xl'>
-                            Use this simple search that populates information on specific dog breeds and see if they will be a good fit in your family. After finding a breed that interests you, you can locate them in your local area! A one stop shop for finding your new dog to adopt. Thinking about getting a dog?
+                            Use this simple search that populates information on specific dog breeds and see if they will be a good fit for your family. After finding a breed that interests you, you can locate them in your local area! A one stop shop for finding your new dog to adopt. Thinking about getting a dog?
                             Would rather adopt one than go to a dogon breeder?
                             Well, now you can with Woofify!
                         </p>

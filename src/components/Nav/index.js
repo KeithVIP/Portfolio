@@ -107,14 +107,12 @@ const Nav = (props) => {
                 </Transition>
             </Menu>
             <div id='logo' className='flex flex-col w-full justify-start items-center'>
-                <a href='/'>
-                    <img
-                        src={require(`../../assets/images/logo3.png`)}
-                        alt="logo"
-                        className="w-100 h-100 animate-slider1 flex justify-start"
-                        style={{ height: '250px', width: '250px' }}
-                    />
-                </a>
+                <img
+                    src={require(`../../assets/images/logo3.png`)}
+                    alt="logo"
+                    className="w-100 h-100 animate-slider1 flex justify-start"
+                    style={{ height: '250px', width: '250px' }}
+                />
             </div>
         </header >
     )
