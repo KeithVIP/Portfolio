@@ -27,7 +27,7 @@ const Navigation = (props) => {
                 <div id='subcontainer'>
                     <a href='/'>
                         <img
-                            src={require(`../../assets/images/logo4.png`)}
+                            src={require(`../../assets/images/logo3.png`)}
                             alt="logo"
                             className="w-100 h-100 animate-slider1"
                         />

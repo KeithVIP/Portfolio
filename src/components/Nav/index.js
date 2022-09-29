@@ -26,15 +26,15 @@ const Nav = (props) => {
     };
 
     return (
-        <header className='flex'>
+        <header className='flex flex-col'>
             {
                 isResumeOpen && (
                     <Resume onClose={toggleResume} />
                 )
             }
-            <Menu as="div" className="relative inline-block text-left">
-                <div>
-                    <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+            <Menu as="div" className="justify-start relative inline-block text-start p-2">
+                <div className="">
+                    <Menu.Button className="inline-flex justify-start rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
                         <Bars3Icon className="w-14 h-14 hover:text-c-red active:text-c-black" aria-hidden="true" />
                     </Menu.Button>
                 </div>
@@ -48,7 +48,7 @@ const Nav = (props) => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <div className="py-1">
                             <Menu.Item>
                                 {({ active }) => (
@@ -61,7 +61,7 @@ const Nav = (props) => {
                                         }}
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm'
+                                            'block px-4 py-2 text-xl'
                                         )}
                                     >
                                         About
@@ -79,7 +79,7 @@ const Nav = (props) => {
                                         }}
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm'
+                                            'block px-4 py-2 text-xl'
                                         )}
                                     >
                                         Portfolio
@@ -95,7 +95,7 @@ const Nav = (props) => {
                                         }}
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm'
+                                            'block px-4 py-2 text-xl'
                                         )}
                                     >
                                         Resume
@@ -106,13 +106,13 @@ const Nav = (props) => {
                     </Menu.Items>
                 </Transition>
             </Menu>
-            <div id='logo' className='flex w-full justify-center items-center'>
+            <div id='logo' className='flex flex-col w-full justify-start items-center'>
                 <a href='/'>
                     <img
                         src={require(`../../assets/images/logo3.png`)}
                         alt="logo"
-                        className="w-100 h-100 animate-slider1"
-                        style={{ height: '350px', width: '350px' }}
+                        className="w-100 h-100 animate-slider1 flex justify-start"
+                        style={{ height: '250px', width: '250px' }}
                     />
                 </a>
             </div>
