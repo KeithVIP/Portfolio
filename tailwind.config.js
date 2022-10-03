@@ -24,7 +24,7 @@ module.exports = {
       'c-tblack': 'rgba(0, 0, 0, 0.7)'
     },
     backgroundImage: {
-      'new-logo': "url('')"
+      'vintage': "url('../src/assets/images/vintagebackground3.png')",
     },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],

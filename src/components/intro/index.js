@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <div className='min-h-screen bg-c-black text-c-white flex justify-center items-center'>
             <img
-                src={require(`../../assets/images/logo2.gif`)}
+                src={require(`../../assets/images/Logo.gif`)}
                 alt="logo" />
         </div>
     );
