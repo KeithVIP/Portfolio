@@ -5,7 +5,7 @@ import EmailLogo from '../../assets/logos/email.svg';
 
 const Footer = () => {
     return (
-        <footer className='sticky bottom-0'>
+        <footer className='sticky bottom-0 z-20'>
             <ul className="flex flex-col items-start space-y-5 p-2">
                 <li>
                     <a href="https://www.linkedin.com/in/keith-yanosy-8b174753/" target='_blank'>

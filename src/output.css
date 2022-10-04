@@ -648,6 +648,10 @@ video {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -896,6 +900,72 @@ video {
           animation: bouncey 1.5s ease-out infinite;
 }
 
+@-webkit-keyframes nav1-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes nav1-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animate-nav1-down {
+  -webkit-animation: nav1-down 1.0s ease-out;
+          animation: nav1-down 1.0s ease-out;
+}
+
+@-webkit-keyframes nav2-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes nav2-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animate-nav2-down {
+  -webkit-animation: nav2-down 1.0s ease-out;
+          animation: nav2-down 1.0s ease-out;
+}
+
 @-webkit-keyframes fade1 {
   0%, 25% {
     opacity: 0;
@@ -958,8 +1028,8 @@ video {
 }
 
 .animate-fade2 {
-  -webkit-animation: fade2 1.5s ease-out;
-          animation: fade2 1.5s ease-out;
+  -webkit-animation: fade2 1s ease-out;
+          animation: fade2 1s ease-out;
 }
 
 @-webkit-keyframes fade3 {
@@ -991,8 +1061,41 @@ video {
 }
 
 .animate-fade3 {
-  -webkit-animation: fade3 1.5s ease-out;
-          animation: fade3 1.5s ease-out;
+  -webkit-animation: fade3 1s ease-out;
+          animation: fade3 1s ease-out;
+}
+
+@-webkit-keyframes nav3-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes nav3-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animate-nav3-down {
+  -webkit-animation: nav3-down 1.0s ease-out;
+          animation: nav3-down 1.0s ease-out;
 }
 
 .cursor-pointer {
@@ -1059,6 +1162,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(15rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(15rem * var(--tw-space-y-reverse));
+}
+
+.space-y-32 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(8rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1153,11 +1262,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .text-justify {
   text-align: justify;
 }
@@ -1214,6 +1318,16 @@ video {
 .text-c-black {
   --tw-text-opacity: 1;
   color: rgb(3 14 18 / var(--tw-text-opacity));
+}
+
+.text-c-blue {
+  --tw-text-opacity: 1;
+  color: rgb(91 204 246 / var(--tw-text-opacity));
+}
+
+.text-c-gray {
+  --tw-text-opacity: 1;
+  color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1324,11 +1438,6 @@ video {
   outline-offset: 2px;
 }
 
-.active\:text-c-blue:active {
-  --tw-text-opacity: 1;
-  color: rgb(91 204 246 / var(--tw-text-opacity));
-}
-
 .active\:text-c-white:active {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1352,11 +1461,128 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
   }
 
+  @-webkit-keyframes nav1-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  @keyframes nav1-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  .lg\:animate-nav1-slide {
+    -webkit-animation: nav1-slide 1.0s ease-out;
+            animation: nav1-slide 1.0s ease-out;
+  }
+
+  @-webkit-keyframes nav2-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  @keyframes nav2-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  .lg\:animate-nav2-slide {
+    -webkit-animation: nav2-slide 1.0s ease-out;
+            animation: nav2-slide 1.0s ease-out;
+  }
+
+  @-webkit-keyframes nav3-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-30px);
+              transform: translateX(-30px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  @keyframes nav3-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-30px);
+              transform: translateX(-30px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  .lg\:animate-nav3-slide {
+    -webkit-animation: nav3-slide 1.0s ease-out;
+            animation: nav3-slide 1.0s ease-out;
+  }
+
+  .lg\:rounded-none {
+    border-radius: 0px;
+  }
+
   .lg\:opacity-0 {
     opacity: 0;
+  }
+
+  .lg\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 } ;

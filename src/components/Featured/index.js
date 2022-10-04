@@ -10,9 +10,9 @@ const Featured = () => {
     }, []);
 
     return (
-        <section id='featured' className='League min-h-screen overflow-visible'>
-            <ul id='container' className='bg-c-yellow flex flex-col space-y-48'>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+        <section id='featured' className='font-cutive min-h-screen overflow-visible'>
+            <ul id='container' className='flex flex-col'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href="https://fierce-temple-92608.herokuapp.com/" alt="slayers" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -46,7 +46,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href="https://calm-badlands-97625.herokuapp.com/" alt="googlebook" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -80,7 +80,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href="https://keithvip.github.io/Woofify/" alt="woofify" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -106,7 +106,7 @@ const Featured = () => {
                         dara-aos-once="false"
                         className='relative right-32 top-28'>
                         <h2 className='flex justify-end text-7xl font-bold'>Woofify</h2>
-                        <p className='flex flex-wrap text-justify bg-c-yellow rounded- lg p-3 max-w-xl'>
+                        <p className='flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 max-w-xl'>
                             Use this simple search that populates information on specific dog breeds and see if they will be a good fit for your family. After finding a breed that interests you, you can locate them in your local area! A one stop shop for finding your new dog to adopt. Thinking about getting a dog?
                             Would rather adopt one than go to a dogon breeder?
                             Well, now you can with Woofify!

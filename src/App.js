@@ -2,17 +2,18 @@ import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 import Intro from './components/Intro';
-import Navigation from './components/Navigation';
+// import Navigation from './components/Navigation';
 import Nav from './components/Nav';
 // import Projects from './components/Projects';
-import Resume from './components/Resume';
+// import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
-import Portfolio from './components/Portfolio';
-import { useTimeoutFn } from 'react-use';
-import { Transition } from '@headlessui/react';
+// import Portfolio from './components/Portfolio';
+// import { useTimeoutFn } from 'react-use';
+// import { Transition } from '@headlessui/react';
 import TechnologyList from './components/TechnologyList';
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isMenuActive, setIsMenuActive] = useState(true);
+  // const [isMenuActive, setIsMenuActive] = useState(true);
   /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
 
   useEffect(() => {
@@ -66,6 +67,7 @@ const App = () => {
           <main>
             {aboutSelected ? (
               <>
+                <Hero></Hero>
                 <About></About>
                 <TechnologyList></TechnologyList>
               </>
