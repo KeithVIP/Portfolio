@@ -5,8 +5,6 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Nav from './components/Nav';
-// import Projects from './components/Projects';
-// import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
