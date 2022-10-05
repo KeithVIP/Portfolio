@@ -29,7 +29,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='font-Cutive'>
       {isLoading ? (
         /*{ <Transition
           show={isLoading}

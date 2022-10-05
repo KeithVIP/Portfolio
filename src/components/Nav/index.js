@@ -57,7 +57,7 @@ const Nav = (props) => {
                                         }}
                                         className={classNames(
                                             active ? 'text-c-blue' : 'text-c-gray',
-                                            'rounded-lg block px-4 py-2 text-xl animate-nav1-down lg:animate-nav1-slide'
+                                            'rounded-lg block px-4 py-2 text-xl animate-nav1-down lg:animate-nav1-slid'
                                         )}
                                     >
                                         About
