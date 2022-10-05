@@ -10,9 +10,9 @@ const Featured = () => {
     }, []);
 
     return (
-        <section id='featured' className='font-cutive min-h-screen overflow-visible'>
+        <section id='featured' className='font-cutive'>
             <ul id='container' className='flex flex-col'>
-                <li className='min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center ml-10'>
                     <a href="https://fierce-temple-92608.herokuapp.com/" alt="slayers" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -24,7 +24,7 @@ const Featured = () => {
                             dara-aos-once="false"
                             src={require('../../assets/thumbnails/slayers.gif')}
                             alt='Woofify'
-                            className='flex p-10'
+                            className='flex p-1.5 ring-c-gray ring-8 rounded-3xl'
                         ></img>
                     </a>
                     <div
@@ -46,7 +46,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center ml-10'>
                     <a href="https://calm-badlands-97625.herokuapp.com/" alt="googlebook" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -58,7 +58,7 @@ const Featured = () => {
                             dara-aos-once="false"
                             src={require('../../assets/thumbnails/googlebook.gif')}
                             alt='Woofify'
-                            className='flex p-10'
+                            className='flex p-1.5 ring-c-gray ring-8 rounded-3xl'
                         ></img>
                     </a>
                     <div
@@ -80,7 +80,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center ml-10'>
                     <a href="https://keithvip.github.io/Woofify/" alt="woofify" target="_blank">
                         <img
                             data-aos="fade-left"
@@ -90,9 +90,9 @@ const Featured = () => {
                             data-aos-anchor=""
                             data-aos-anchor-placement=""
                             dara-aos-once="false"
-                            src={require('../../assets/thumbnails/Woofify2.gif')}
+                            src={require('../../assets/thumbnails/Woofify.gif')}
                             alt='Woofify'
-                            className='flex p-10'
+                            className='flex p-1.5 ring-c-gray ring-8 rounded-3xl'
                         ></img>
                     </a>
                     <div
