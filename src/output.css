@@ -1077,11 +1077,6 @@ video {
   border-width: 1px;
 }
 
-.bg-c-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 222 103 / var(--tw-bg-opacity));
-}
-
 .bg-c-shade {
   --tw-bg-opacity: 1;
   background-color: rgb(57 57 57 / var(--tw-bg-opacity));
@@ -1090,6 +1085,11 @@ video {
 .bg-c-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(91 204 246 / var(--tw-bg-opacity));
+}
+
+.bg-c-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 222 103 / var(--tw-bg-opacity));
 }
 
 .bg-c-black {
@@ -1148,10 +1148,6 @@ video {
   vertical-align: top;
 }
 
-.font-League {
-  font-family: League Spartan, sans-serif;
-}
-
 .font-Cutive {
   font-family: Cutive Mono, monospace;
 }
@@ -1160,12 +1156,8 @@ video {
   font-family: Gwendolyn, cursive;
 }
 
-.font-Gravitas {
-  font-family: Gravitas One, cursive;
-}
-
-.font-Nanum {
-  font-family: Nanum Gothic, sans-serif;
+.font-League {
+  font-family: League Spartan, sans-serif;
 }
 
 .text-7xl {

@@ -5,8 +5,8 @@
 
 Welcome to my Portfolio!
 
-You may visit the deployed app at [Heroku](https://intense-dusk-07819.herokuapp.com/)!
-You may visit the repository at [GitHub](https://github.com/VMLujanJr/tech-blog)!
+<!-- You may visit the deployed app at [Heroku](https://intense-dusk-07819.herokuapp.com/)!
+You may visit the repository at [GitHub](https://github.com/VMLujanJr/tech-blog)! -->
 
 ## Table of Contents
 
