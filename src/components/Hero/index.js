@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <section id='hero' className="bg-vintage">
-            <div className='flex flex-col w-full justify-start items-center align-top'>
+            <div className='flex flex-col w-full justify-start items-center align-top animate-slider1'>
                 <img
                     src={require(`../../assets/images/logo2.png`)}
                     alt="hero"

@@ -62,7 +62,7 @@ const App = () => {
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
           ></Navigation> */}
-          <main>
+          <main className='divide-y-8'>
             {aboutSelected ? (
               <>
                 <Hero></Hero>
