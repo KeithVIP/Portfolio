@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='font-Cutive inline-block mobile:inline'>
+    <div className='font-Cutive inline'>
       {isLoading ? (
         /*{ <Transition
           show={isLoading}

@@ -679,6 +679,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1167,16 +1171,20 @@ video {
   font-size: 5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
 }
 
 .font-bold {
@@ -1323,6 +1331,12 @@ video {
   }
 }
 
+@media (min-width: 575px) {
+  .tablet\:max-w-md {
+    max-width: 28rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .laptop\:relative {
     position: relative;
@@ -1330,6 +1344,10 @@ video {
 
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:max-w-lg {
+    max-width: 32rem;
   }
 
   @-webkit-keyframes nav1-slide {
@@ -1433,6 +1451,18 @@ video {
 
   .laptop\:rounded-none {
     border-radius: 0px;
+  }
+
+  .laptop\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .laptop\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .laptop\:text-lg {
+    font-size: 1.125rem;
   }
 
   .laptop\:shadow-none {
