@@ -703,6 +703,10 @@ video {
   height: 50px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -752,6 +756,10 @@ video {
   width: 50px;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -784,37 +792,9 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@-webkit-keyframes slider1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes slider1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-.animate-slider1 {
-  -webkit-animation: slider1 1.5s ease-in-out;
-          animation: slider1 1.5s ease-in-out;
+.animate-slider3 {
+  -webkit-animation: slider3 1.5s ease-in-out;
+          animation: slider3 1.5s ease-in-out;
 }
 
 @-webkit-keyframes slider2 {
@@ -914,6 +894,39 @@ video {
 .animate-bouncey {
   -webkit-animation: bouncey 1.5s ease-out infinite;
           animation: bouncey 1.5s ease-out infinite;
+}
+
+@-webkit-keyframes slider1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slider1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.animate-slider1 {
+  -webkit-animation: slider1 1.5s ease-in-out;
+          animation: slider1 1.5s ease-in-out;
 }
 
 @-webkit-keyframes nav1-down {

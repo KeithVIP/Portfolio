@@ -12,8 +12,7 @@ const Footer = () => {
                         <img
                             src={LinkedIn}
                             alt="linkedin logo"
-                            className="hover:scale-110"
-                            style={{ width: '54px', height: '54px' }}>
+                            className="hover:scale-110 w-[30px] h-[30px]">
                         </img>
                     </a>
                 </li>
@@ -22,8 +21,7 @@ const Footer = () => {
                         <img
                             src={GitHubLogo}
                             alt="github logo"
-                            className="hover:scale-110"
-                            style={{ width: '54px', height: '54px' }}>
+                            className="hover:scale-110 w-[30px] h-[30px]">
                         </img>
                     </a>
                 </li>
@@ -32,8 +30,7 @@ const Footer = () => {
                         <img
                             src={EmailLogo}
                             alt="email logo"
-                            className="hover:scale-110"
-                            style={{ width: '54px', height: '54px' }}>
+                            className="hover:scale-110 w-[30px] h-[30px]">
                         </img>
                     </a>
                 </li>
