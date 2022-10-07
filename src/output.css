@@ -736,6 +736,10 @@ video {
   width: 12rem;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1167,12 +1171,16 @@ video {
   font-family: League Spartan, sans-serif;
 }
 
-.text-7xl {
-  font-size: 5rem;
+.text-4xl {
+  font-size: 2.25rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
 }
 
 .text-xl {
@@ -1181,10 +1189,6 @@ video {
 
 .text-2xl {
   font-size: 1.5rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
 }
 
 .font-bold {
@@ -1325,12 +1329,6 @@ video {
   color: rgb(249 64 58 / var(--tw-text-opacity));
 }
 
-@media (min-width: 360px) {
-  .mobile\:inline {
-    display: inline;
-  }
-}
-
 @media (min-width: 575px) {
   .tablet\:max-w-md {
     max-width: 28rem;
@@ -1453,16 +1451,12 @@ video {
     border-radius: 0px;
   }
 
-  .laptop\:text-2xl {
-    font-size: 1.5rem;
-  }
-
   .laptop\:text-7xl {
     font-size: 5rem;
   }
 
-  .laptop\:text-lg {
-    font-size: 1.125rem;
+  .laptop\:text-2xl {
+    font-size: 1.5rem;
   }
 
   .laptop\:shadow-none {
