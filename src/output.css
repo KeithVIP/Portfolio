@@ -695,6 +695,10 @@ video {
   display: grid;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -703,8 +707,8 @@ video {
   height: 50px;
 }
 
-.h-\[30px\] {
-  height: 30px;
+.h-\[35px\] {
+  height: 35px;
 }
 
 .max-h-full {
@@ -732,6 +736,10 @@ video {
   width: 80%;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[350px\] {
   width: 350px;
 }
@@ -756,8 +764,8 @@ video {
   width: 50px;
 }
 
-.w-\[30px\] {
-  width: 30px;
+.w-\[35px\] {
+  width: 35px;
 }
 
 .max-w-lg {
@@ -797,11 +805,11 @@ video {
           animation: slider3 1.5s ease-in-out;
 }
 
-@-webkit-keyframes slider2 {
+@-webkit-keyframes slider1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
 
   100% {
@@ -811,11 +819,11 @@ video {
   }
 }
 
-@keyframes slider2 {
+@keyframes slider1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
 
   100% {
@@ -825,9 +833,9 @@ video {
   }
 }
 
-.animate-slider2 {
-  -webkit-animation: slider2 1.5s ease-in;
-          animation: slider2 1.5s ease-in;
+.animate-slider1 {
+  -webkit-animation: slider1 1.5s ease-in-out;
+          animation: slider1 1.5s ease-in-out;
 }
 
 @-webkit-keyframes bounce {
@@ -894,39 +902,6 @@ video {
 .animate-bouncey {
   -webkit-animation: bouncey 1.5s ease-out infinite;
           animation: bouncey 1.5s ease-out infinite;
-}
-
-@-webkit-keyframes slider1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes slider1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-.animate-slider1 {
-  -webkit-animation: slider1 1.5s ease-in-out;
-          animation: slider1 1.5s ease-in-out;
 }
 
 @-webkit-keyframes nav1-down {
