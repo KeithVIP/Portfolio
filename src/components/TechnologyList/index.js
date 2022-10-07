@@ -105,7 +105,7 @@ const data = [
 const TechnologyList = () => {
     return (
         <section className='font-Cutive z-10 max-h-min flex flex-col justify-center items-center overflow-hidden p-10 mt-10'>
-            <h2 className='font-bold text-7xl'>Technologies</h2>
+            <h2 className='font-bold text-4xl'>Technologies</h2>
             <div className='w-full grid grid-cols-3 place-items-center gap-10 max-w-xl mt-20'>
                 {data.map(({ id, name, website, image }) => (
                     <div key={id} className=''>
@@ -114,8 +114,7 @@ const TechnologyList = () => {
                                 key={id}
                                 src={image}
                                 alt={name}
-                                className=''
-                                style={{ width: '100px', height: '100px' }}
+                                className='w-[50px] h-[50px] laptop:w-[100px] laptop:h-[100px]'
                             />
                         </a>
                     </div>
