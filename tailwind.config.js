@@ -6,6 +6,13 @@ module.exports = {
     "./src/components/**/*.{html,js}"
   ],
   theme: {
+    screens: {
+      'mobile': '360px',
+      'tablet': '575px',
+      'laptop': '1024px',
+      'desktop': '1280px'
+
+    },
     colors: {
       'c-yellow': '#fcde67',
       'c-blue': '#5bccf6',
