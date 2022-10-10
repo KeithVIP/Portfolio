@@ -5,7 +5,6 @@ import SlayersImg from '../../assets/thumbnails/slayers.gif';
 import GoogleBookImg from '../../assets/thumbnails/googlebook.gif';
 import WoofifyImg from '../../assets/thumbnails/Woofify.gif';
 
-
 const Featured = () => {
     useEffect(() => {
         AOS.init({
@@ -44,10 +43,11 @@ const Featured = () => {
     ];
 
     return (
-        <section id='featured'>
-            <ul id='container' className='flex flex-col'>
+        <section id='featured' className=''>
+            <ul id='container' className='customViewHeight flex flex-col items-center'>
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
-                    <li key={id} className='min-h-screen flex justify-center items-center'>
+                    <li key={id} className='max-w-xs flex flex-col justify-center items-center'>
+                        <h2 className='font-Ephesis font-bold flex justify-end text-6xl'>{name}</h2>
                         <a href={website} alt={alt} target='_blank'>
                             <img
                                 data-aos='zoom-in'
@@ -72,13 +72,11 @@ const Featured = () => {
                             data-aos-anchor=''
                             data-aos-achor-placement='top-bottom'
                             data-aos-once='false'
-                            className='relative right-32 top-28'
-                        >
-                            <h2 className='font-Gwen flex justify-end text-7xl font-bold'>{name}</h2>
-                            <p className='flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 max-w-xl'>
+                            className='relative w-4/5 laptop:right-32 laptop:top-28'>
+                            <p className='text-sm flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 laptop:max-w-xl max-h-fit'>
                                 {description}
                             </p>
-                            <div className='flex justify-center'>
+                            <div className='font-bold italic flex justify-center text-sm'>
                                 {technologies}
                             </div>
                         </div>

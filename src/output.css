@@ -602,14 +602,6 @@ video {
   right: 2.5rem;
 }
 
-.right-32 {
-  right: 8rem;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -695,8 +687,8 @@ video {
   display: grid;
 }
 
-.h-\[40px\] {
-  height: 40px;
+.h-\[35px\] {
+  height: 35px;
 }
 
 .h-14 {
@@ -707,8 +699,10 @@ video {
   height: 50px;
 }
 
-.h-\[35px\] {
-  height: 35px;
+.max-h-fit {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .max-h-full {
@@ -736,8 +730,8 @@ video {
   width: 80%;
 }
 
-.w-\[40px\] {
-  width: 40px;
+.w-\[35px\] {
+  width: 35px;
 }
 
 .w-\[350px\] {
@@ -764,16 +758,26 @@ video {
   width: 50px;
 }
 
-.w-\[35px\] {
-  width: 35px;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .max-w-lg {
   max-width: 32rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .origin-top-right {
@@ -1171,12 +1175,16 @@ video {
   font-family: Cutive Mono, monospace;
 }
 
-.font-Gwen {
-  font-family: Gwendolyn, cursive;
-}
-
 .font-League {
   font-family: League Spartan, sans-serif;
+}
+
+.font-Nanum {
+  font-family: Nanum Gothic, sans-serif;
+}
+
+.font-Ephesis {
+  font-family: Ephesis, cursive;
 }
 
 .text-4xl {
@@ -1185,6 +1193,10 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+}
+
+.text-sm {
+  font-size: .875rem;
 }
 
 .text-7xl {
@@ -1199,12 +1211,24 @@ video {
   font-size: 1.5rem;
 }
 
+.text-6xl {
+  font-size: 4rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-c-white {
@@ -1348,6 +1372,14 @@ video {
     position: relative;
   }
 
+  .laptop\:right-32 {
+    right: 8rem;
+  }
+
+  .laptop\:top-28 {
+    top: 7rem;
+  }
+
   .laptop\:flex {
     display: flex;
   }
@@ -1366,6 +1398,10 @@ video {
 
   .laptop\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .laptop\:max-w-xl {
+    max-width: 36rem;
   }
 
   @-webkit-keyframes nav1-slide {
