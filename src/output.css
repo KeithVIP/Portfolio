@@ -698,10 +698,6 @@ video {
   width: 100%;
 }
 
-<<<<<<< HEAD
-.w-3\/5 {
-  width: 60%;
-=======
 .w-4\/5 {
   width: 80%;
 }
@@ -712,7 +708,6 @@ video {
 
 .w-\[350px\] {
   width: 350px;
->>>>>>> feature/removeResumeComponent
 }
 
 .w-screen {
@@ -1146,33 +1141,20 @@ video {
   font-size: 1.125rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
+.text-7xl {
+  font-size: 5rem;
 }
 
 .text-sm {
   font-size: .875rem;
-}
-
-.text-7xl {
-  font-size: 5rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
 }
 
-<<<<<<< HEAD
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.text-sm {
-  font-size: .875rem;
-=======
 .font-black {
   font-weight: 900;
->>>>>>> feature/removeResumeComponent
 }
 
 .font-bold {
@@ -1297,14 +1279,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-.active\:text-c-red:active {
-  --tw-text-opacity: 1;
-  color: rgb(249 64 58 / var(--tw-text-opacity));
-}
-
-=======
->>>>>>> feature/removeResumeComponent
 @media (min-width: 575px) {
   .tablet\:max-w-md {
     max-width: 28rem;
