@@ -771,10 +771,6 @@ video {
   max-width: 36rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .origin-top-right {
   -webkit-transform-origin: top right;
           transform-origin: top right;
@@ -1113,14 +1109,6 @@ video {
 
 .bg-vintage {
   background-image: url('../src/assets/images/vintagebackground3.png');
-}
-
-.object-contain {
-  object-fit: contain;
-}
-
-.object-cover {
-  object-fit: cover;
 }
 
 .p-2\.5 {
