@@ -4,20 +4,15 @@ import Featured from './components/Featured';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
-import Navigaton from './components/Navigation';
-// import logo from './assets/images/banner.gif';
+import Navigation from './components/Navigation';
 import './App.css';
 import './output.css';
-import { useTimeoutFn } from 'react-use';
-import { Transition } from '@headlessui/react';
 import TechnologyList from './components/TechnologyList';
 
 const App = () => {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isMenuActive, setIsMenuActive] = useState(true);
-  /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
 
   useEffect(() => {
     setTimeout(() => {

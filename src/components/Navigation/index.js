@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
@@ -8,11 +8,11 @@ function classNames(...classes) {
 
 const Navigation = (props) => {
     const {
-        aboutSelected,
+        // aboutSelected,
         setAboutSelected,
-        portfolioSelected,
+        // portfolioSelected,
         setPortfolioSelected,
-        resumeSelected,
+        // resumeSelected,
     } = props;
 
     return (
@@ -37,8 +37,8 @@ const Navigation = (props) => {
                         <div className="font-bold font-cutive font-py-1 laptop:flex">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a
-                                        href="#"
+                                    <button
+                                        type='button'
                                         onClick={() => {
                                             setAboutSelected(true)
                                             setPortfolioSelected(false)
@@ -49,13 +49,13 @@ const Navigation = (props) => {
                                         )}
                                     >
                                         About
-                                    </a>
+                                    </button>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a
-                                        href="#"
+                                    <button
+                                        type='button'
                                         onClick={() => {
                                             setAboutSelected(false)
                                             setPortfolioSelected(true)
@@ -66,13 +66,14 @@ const Navigation = (props) => {
                                         )}
                                     >
                                         Portfolio
-                                    </a>
+                                    </button>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
                                     <a
                                         href={'https://drive.google.com/file/d/14pWkHgmXBEBiEWw61Qw-dj4jMdJHQOv7/view?usp=sharing'}
+                                        rel={'noreferrer'}
                                         target={'_blank'}
                                         className={classNames(
                                             active ? 'text-c-blue' : 'text-c-gray',

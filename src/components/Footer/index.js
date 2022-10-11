@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className='sticky bottom-0 z-20'>
             <ul className="flex flex-col items-start space-y-5 p-2">
                 <li>
-                    <a href="https://www.linkedin.com/in/keith-yanosy-8b174753/" target='_blank'>
+                    <a href="https://www.linkedin.com/in/keith-yanosy-8b174753/" target='_blank' rel='noreferrer'>
                         <img
                             src={LinkedIn}
                             alt="linkedin logo"
@@ -17,7 +17,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/KeithVIP" target='_blank'>
+                    <a href="https://github.com/KeithVIP" target='_blank' rel='noreferrer'>
                         <img
                             src={GitHubLogo}
                             alt="github logo"
@@ -26,7 +26,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:KeithVIP@gmail.com" target='_blank'>
+                    <a href="mailto:KeithVIP@gmail.com" target='_blank' rel='noreferrer'>
                         <img
                             src={EmailLogo}
                             alt="email logo"
