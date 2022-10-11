@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
-// import Resume from '../Resume';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -14,20 +13,10 @@ const Nav = (props) => {
         portfolioSelected,
         setPortfolioSelected,
         resumeSelected,
-        // setResumeSelected
     } = props;
-    // const [isResumeOpen, setIsResumeOpen] = useState(false);
-    // const toggleResume = (resume) => {
-    //     setIsResumeOpen(!isResumeOpen);
-    // };
 
     return (
         <header className='flex flex-col max-h-full w-screen'>
-            {/* {
-                isResumeOpen && (
-                    <Resume onClose={toggleResume} />
-                )
-            } */}
             <Menu as="div" className="laptop:flex bg-c-white text-c-black justify-start relative inline-block text-start p-2">
                 <div className="">
                     <Menu.Button className="inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg font-medium text-gray-700 white-sm hover:bg-gray-50">
@@ -53,7 +42,6 @@ const Nav = (props) => {
                                         onClick={() => {
                                             setAboutSelected(true)
                                             setPortfolioSelected(false)
-                                            // setResumeSelected(false)
                                         }}
                                         className={classNames(
                                             active ? 'text-c-blue' : 'text-c-gray',
@@ -71,7 +59,6 @@ const Nav = (props) => {
                                         onClick={() => {
                                             setAboutSelected(false)
                                             setPortfolioSelected(true)
-                                            // setResumeSelected(false)
                                         }}
                                         className={classNames(
                                             active ? 'text-c-blue' : 'text-c-gray',
@@ -87,9 +74,6 @@ const Nav = (props) => {
                                     <a
                                         href={'https://drive.google.com/file/d/14pWkHgmXBEBiEWw61Qw-dj4jMdJHQOv7/view?usp=sharing'}
                                         target={'_blank'}
-                                        // onClick={() => {
-                                        //     toggleResume(false)
-                                        // }}
                                         className={classNames(
                                             active ? 'text-c-blue' : 'text-c-gray',
                                             'block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide'
