@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import pdfjsWorker from 'react-pdf/node_modules/pdfjs-dist/build/pdf.worker.entry';
-import ResumePDF from '../../assets/images/resume.pdf';
+import ResumePDF from '../../assets/images/resume2.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
@@ -12,8 +12,8 @@ const Resume = ({ onClose }) => {
                 <button
                     type='button'
                     onClick={onClose}
-                    className='font-bold text-2xl text-c-black bg-c-yellow flex justify-end w-full hover:text-c-black active:text-c-red'>
-                    <span className='bg-c-blue w-48 flex justify-start'>X</span>
+                    className='font-bold text-2xl bg-c-white text-c-black flex justify-end w-full hover:text-c-blue active:text-c-white'>
+                    <span className='w-48 flex justify-end'>X</span>
                 </button>
                 <Document file={ResumePDF} className={'custom-scroll'}>
                     <Page pageNumber={1} scale={0.6} />

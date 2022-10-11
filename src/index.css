@@ -21,5 +21,5 @@ code {
 
 /* Select every 1st list item starting from the second  */
 .customViewHeight li:nth-child(1n + 1) {
-  min-height: 90vh;
+  min-height: 100vh;
 }
