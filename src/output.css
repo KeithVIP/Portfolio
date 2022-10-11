@@ -642,8 +642,9 @@ video {
   z-index: 50;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-5 {
@@ -758,10 +759,6 @@ video {
   width: 50px;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .max-w-lg {
   max-width: 32rem;
 }
@@ -774,10 +771,8 @@ video {
   max-width: 36rem;
 }
 
-.max-w-fit {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .origin-top-right {
@@ -1120,6 +1115,14 @@ video {
   background-image: url('../src/assets/images/vintagebackground3.png');
 }
 
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
 .p-2\.5 {
   padding: 0.625rem;
 }
@@ -1175,16 +1178,12 @@ video {
   font-family: Cutive Mono, monospace;
 }
 
-.font-League {
-  font-family: League Spartan, sans-serif;
-}
-
-.font-Nanum {
-  font-family: Nanum Gothic, sans-serif;
-}
-
 .font-Ephesis {
   font-family: Ephesis, cursive;
+}
+
+.font-League {
+  font-family: League Spartan, sans-serif;
 }
 
 .text-4xl {
@@ -1193,6 +1192,10 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+}
+
+.text-6xl {
+  font-size: 4rem;
 }
 
 .text-sm {
@@ -1209,10 +1212,6 @@ video {
 
 .text-2xl {
   font-size: 1.5rem;
-}
-
-.text-6xl {
-  font-size: 4rem;
 }
 
 .font-black {
