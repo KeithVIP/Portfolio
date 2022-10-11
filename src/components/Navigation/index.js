@@ -18,7 +18,7 @@ const Navigation = (props) => {
     return (
         <header className='flex flex-col max-h-full w-screen'>
             <Menu as="div" className="laptop:flex bg-c-white text-c-black justify-start relative inline-block text-start p-2">
-                <div className="">
+                <div className=''>
                     <Menu.Button className="inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg font-medium text-gray-700 white-sm hover:bg-gray-50">
                         <Bars3Icon className="w-14 h-14 hover:text-c-blue active:text-c-white" aria-hidden="true" />
                     </Menu.Button>
@@ -33,8 +33,8 @@ const Navigation = (props) => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="bg-c-white laptop:flex laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none">
-                        <div className="font-bold font-cutive font-py-1 laptop:flex">
+                    <Menu.Items className="bg-c-white laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none">
+                        <div className="font-cutive font-bold py-1 laptop:flex">
                             <Menu.Item>
                                 {({ active }) => (
                                     <button
