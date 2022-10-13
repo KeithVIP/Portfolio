@@ -4,14 +4,15 @@ import Featured from './components/Featured';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
+import Menu from './components/Menu';
 import Navigation from './components/Navigation';
 import './App.css';
 import './output.css';
 import TechnologyList from './components/TechnologyList';
 
 const App = () => {
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [isAboutSelected, setAboutSelected] = useState(true);
+  const [isPortfolioSelected, setPortfolioSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -23,38 +24,33 @@ const App = () => {
   return (
     <div className='font-Cutive inline'>
       {isLoading ? (
-        /*{ <Transition
-          show={isLoading}
-          enter="transition-opacity ease-in-out duration-50"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity ease-in-out duration-150"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        > }*/
         <Intro></Intro>
-        /*  </Transition> */
-
       ) : (
         <div className='w-full'>
-          <Navigation
-            aboutSelected={aboutSelected}
+          {/* <Navigation
+            isAboutSelected={isAboutSelected}
             setAboutSelected={setAboutSelected}
-            portfolioSelected={portfolioSelected}
+            isPortfolioSelected={isPortfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
           >
-          </Navigation>
+          </Navigation> */}
+          <Menu
+            isAboutSelected={isAboutSelected}
+            setAboutSelected={setAboutSelected}
+            isPortfolioSelected={isPortfolioSelected}
+            setPortfolioSelected={setPortfolioSelected}
+          ></Menu>
           <main className='divide-y-8 divide-solid'>
-            {aboutSelected ? (
+            {isAboutSelected ? (
               <>
                 <Hero></Hero>
                 <About></About>
                 <TechnologyList></TechnologyList>
               </>
+            ) : isPortfolioSelected ? (
+              <Featured className='z-0'></Featured>
             ) : (
-              <Featured
-                className='z-0'
-              ></Featured>
+              <p>404 Page Not Found</p>
             )
             }
           </main>
