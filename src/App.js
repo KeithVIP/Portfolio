@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Menu from './components/Menu';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
+// import Navigation from './components/Navigation';
 import './App.css';
 import './output.css';
 import TechnologyList from './components/TechnologyList';
@@ -13,6 +14,7 @@ import TechnologyList from './components/TechnologyList';
 const App = () => {
   const [isAboutSelected, setAboutSelected] = useState(true);
   const [isPortfolioSelected, setPortfolioSelected] = useState(false);
+  const [isMenuSelected, setMenuSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -34,12 +36,15 @@ const App = () => {
             setPortfolioSelected={setPortfolioSelected}
           >
           </Navigation> */}
-          <Menu
+          {/* <Menu
             isAboutSelected={isAboutSelected}
             setAboutSelected={setAboutSelected}
             isPortfolioSelected={isPortfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
-          ></Menu>
+            isMenuSelected={isMenuSelected}
+            setMenuSelected={setMenuSelected}
+          ></Menu> */}
+          <Header></Header>
           <main className='divide-y-8 divide-solid'>
             {isAboutSelected ? (
               <>
