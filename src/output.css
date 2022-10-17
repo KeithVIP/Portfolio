@@ -602,14 +602,6 @@ video {
   bottom: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-24 {
   top: 6rem;
 }
@@ -669,6 +661,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[35px\] {
@@ -744,6 +740,10 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .grow {
@@ -911,6 +911,39 @@ video {
           animation: nav3-down 1.0s ease-out;
 }
 
+@-webkit-keyframes slider2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slider2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.animate-slider2 {
+  -webkit-animation: slider2 1.5s ease-in;
+          animation: slider2 1.5s ease-in;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1068,6 +1101,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .align-top {
   vertical-align: top;
 }
@@ -1078,6 +1115,10 @@ video {
 
 .font-League {
   font-family: League Spartan, sans-serif;
+}
+
+.font-Nanum {
+  font-family: Nanum Gothic, sans-serif;
 }
 
 .text-4xl {
@@ -1212,19 +1253,14 @@ video {
   outline-offset: 2px;
 }
 
-.active\:text-c-white:active {
+.active\:text-c-yellow:active {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(252 222 103 / var(--tw-text-opacity));
 }
 
 .active\:text-c-blue:active {
   --tw-text-opacity: 1;
   color: rgb(91 204 246 / var(--tw-text-opacity));
-}
-
-.active\:text-c-yellow:active {
-  --tw-text-opacity: 1;
-  color: rgb(252 222 103 / var(--tw-text-opacity));
 }
 
 @media (min-width: 575px) {
@@ -1321,6 +1357,10 @@ video {
 
   .laptop\:text-2xl {
     font-size: 1.5rem;
+  }
+
+  .laptop\:text-xl {
+    font-size: 1.25rem;
   }
 
   .laptop\:text-c-black {

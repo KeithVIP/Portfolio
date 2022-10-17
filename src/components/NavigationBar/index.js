@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuItems from '../MenuItems'; // component
-import { menuItems } from '../../utils/menuItems'; // a specific .js file inside component
+import { menuItems } from '../../utils/menuItems.js'; // a specific .js file inside component
 
 const NavigationBar = () => {
     return (
