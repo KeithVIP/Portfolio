@@ -6,7 +6,7 @@ export const menuItems = [
         submenu: [
             {
                 title: 'About',
-                url: '/about',
+                url: '/',
                 target: '_self',
                 relation: 'no-refresher'
                 /* function: aboutHandler */

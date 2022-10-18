@@ -3,7 +3,7 @@ import About from '../components/About';
 import Hero from '../components/Hero';
 import TechnologyList from '../components/TechnologyList';
 
-const Home = () => {
+const AboutPage = () => {
     return (
         <>
             <Hero />
@@ -13,4 +13,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default AboutPage;
