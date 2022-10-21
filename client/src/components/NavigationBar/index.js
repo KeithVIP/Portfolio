@@ -5,8 +5,13 @@ import { menuItems } from '../../utils/menuItems.js'; // a specific .js file ins
 const NavigationBar = () => {
     return (
         <nav>
-            <ul id='menuItems' className='text-c-red'>
+            <ul id='menuItems' className=''>
+                {/* .map thru menu Array */}
                 {menuItems.map((menu, index) => {
+
+                    /* ICON SHOULD RENDER BY DEFAULT */
+
+                    /* send content to MenuItems via prop drill 'items={menu}', then return */
                     return <MenuItems items={menu} key={index} />
                 })}
             </ul>

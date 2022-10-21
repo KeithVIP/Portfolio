@@ -7,16 +7,18 @@ const Dropdown = ({ submenus, dropdown }) => {
             {submenus.map((submenu, index) => (
                 <li key={index}>
                     <Link
-                        href={submenu.url}
+                        to={submenu.url}
                         target={submenu.target}
                         rel={submenu.relation}
-                        /* onClick={item.function} */
                         className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'
                     >
                         {submenu.title}
                     </Link>
                 </li>
             ))}
+            <li>
+                <a href='https://drive.google.com/file/d/14pWkHgmXBEBiEWw61Qw-dj4jMdJHQOv7/view?usp=sharing' target='_blank' rel='noreferrer' className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'>Resume</a>
+            </li>
         </ul>
     );
 };
