@@ -32,7 +32,8 @@ module.exports = {
       'c-tblack': 'rgba(0, 0, 0, 0.7)'
     },
     backgroundImage: {
-      'vintage': "url('../src/assets/images/vintagebackground3.png')",
+      'vintage': "url('../src/assets/images/vintagebackground7.png')",
+      'paper': "url('../src/assets/images/temp/1080background.png')",
     },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],

@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Dropdown from '../Dropdown';
 
 const MenuItems = ({ items }) => {
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdown, setDropdown] = useState(null);
+    // const [laptopDropdown, setLaptopDropdown] = usestate(true);
     let ref = useRef(); // access the DOM elements of the dropdown by passing a reference to the target node
 
     /* if you click outside of the menu, the menu items will collapse */
@@ -13,6 +14,7 @@ const MenuItems = ({ items }) => {
                 setDropdown(false);
             }
         };
+
         document.addEventListener('mousedown', handler);
         document.addEventListener('touchstart', handler);
 
@@ -36,10 +38,10 @@ const MenuItems = ({ items }) => {
             });
         }
 
-        window.addEventListener(`resize`, handleResize);
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            window.removeEventListener(`resize`, handleResize);
+            window.removeEventListener('resize', handleResize);
         }
     });
 
@@ -51,28 +53,28 @@ const MenuItems = ({ items }) => {
         }
     }, [dimensions]);
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         if (window.innerWidth >= 1024 && !dropdown) {
-    //             setDropdown(true);
-    //         } else if (window.innerWidth < 1024 && dropdown) {
-    //             setDropdown(false);
-    //         }
-    //         console.log(`resized to: `, window.innerWidth, `x`, window.innerHeight);
-    //     }
-    //     window.addEventListener(`resize`, handleResize);
+    /* useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024 && !dropdown) {
+                setDropdown(true);
+            } else if (window.innerWidth < 1024 && dropdown) {
+                setDropdown(false);
+            }
+            console.log(`resized to: `, window.innerWidth, `x`, window.innerHeight);
+        }
+        window.addEventListener('resize', handleResize);
 
-    //     return () => {
-    //         window.removeEventListener(`resize`, handleResize);
-    //     }
-    // });
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }); */
 
     const onMouseEnter = () => {
-        window.innerWidth >= 1024 && setDropdown(true);
+        window.innerWidth < 1024 && setDropdown(true);
     };
 
     const onMouseLeave = () => {
-        window.innerWidth >= 1024 && setDropdown(false);
+        window.innerWidth < 1024 && setDropdown(false);
     };
 
     return (
@@ -92,7 +94,6 @@ const MenuItems = ({ items }) => {
                         rel={items.relation}
                         aria-expanded={dropdown ? "true" : "false"}
                         onClick={() => setDropdown((prev) => !prev)}
-                        /* onClick={item.function} */
                         className='laptop:hidden inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'
                     >
                         {items.icon}

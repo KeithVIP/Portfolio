@@ -144,3 +144,52 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+- Mobile-First Approach
+- Header
+  - Home Icon
+  - Projects
+    - Slider / Images
+    - Description
+    - Technologies Used
+    - Try Demo / View Code / Watch Presentation
+  - About
+    - Brief Description
+    - Tech used in backend, frontend, devops, and langauges, and testing
+    - Personal Interests
+  - Resume
+    - View Resume (Open Modal) / Download Resume
+- Footer
+  - Links to GitHub, Email, and LinkedIn
+  - Copyright
+
+
+Portfolio should link to:
+- LinkedIn
+- GitHub
+- Resume
+- Credly (Certification)
+- Projects
+- Email (pop up)
+
+- Click on Resume 'Nav'; modal populates whole page; close icon, View PDF, Re-size, Download.
+
+Chrome DevTools
+Markdown
+Git
+CSS3
+HTML5
+JavaScript
+jQuery
+MySQL
+Bootstrap
+TailwindCSS
+MongoDB
+Express.js
+React
+Node.js
+adaaaaaa
+
+Possible bugs 
+
+- On PAGE RELOAD, the NAVIGATION MENU DOES NOT SHOW UP(ONLY in >1024).
+- On PAGE RESIZE, we need to LIMIT the event to every second or 1000 miliseconds

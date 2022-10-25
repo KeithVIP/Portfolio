@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 /* Components */
-import Footer from './components/Footer';
-import Header from './components/Header';
+// import Footer from './components/Footer';
+// import Header from './components/Header';
 
 /* Pages */
 import AboutPage from './pages/AboutPage.js';
@@ -30,7 +30,7 @@ const App = () => {
         <IntroPage />
       ) : (
         <div id='main-container'>
-          <Header />
+          {/* <Header /> */}
           <div id='sub-container'>
             <Routes>
               <Route
@@ -51,7 +51,7 @@ const App = () => {
               />
             </Routes>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       )
       }
