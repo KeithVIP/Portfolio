@@ -24,12 +24,14 @@ module.exports = {
     },
     backgroundColor: {
       'c-yellow': '#fcde67',
+      'c-red': '#F9403A',
       'c-blue': '#5bccf6',
       'c-black': '#030e12',
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
       'c-shade': '#393939',
-      'c-tblack': 'rgba(0, 0, 0, 0.7)'
+      'c-tblack': 'rgba(0, 0, 0, 0.7)',
+      'c-tgray': 'rgba(54, 54, 54, 0.9)'
     },
     backgroundImage: {
       'vintage': "url('../src/assets/images/vintagebackground7.png')",
@@ -37,22 +39,11 @@ module.exports = {
     },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],
-      Audiowide: ['Audiowide', 'cursive'],
-      Bhu: ['BhuTuko Expanded One', 'cursive'],
-      Cutive: ['Cutive Mono', 'monospace'],
-      Eagle: ['Eagle Lake', 'cursive'],
-      Engage: ['Engagement', 'cursive'],
-      Ephesis: ['Ephesis', 'cursive'],
-      Gravitas: ['Gravitas One', 'cursive'],
-      Gwen: ['Gwendolyn', 'cursive'],
+      Cinzel: ['Cinzel', 'serif'],
+      Cutive: ['Cutive', 'serif'],
       Josefin: ['Josefin Sans', 'sans-serif'],
       League: ['League Spartan', 'sans-serif'],
-      Lora: ['Lora', 'serif'],
-      Meddon: ['Meddon', 'cursive'],
       Nanum: ['Nanum Gothic', 'sans-serif'],
-      Open: ['Open Sans', 'sans-serif'],
-      Race: ['Racing Sans One', 'cursive'],
-      Rom: ['Rommetto One', 'cursive'],
     },
     fontSize: {
       'xs': '.75rem',
