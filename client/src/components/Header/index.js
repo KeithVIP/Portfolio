@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <div id='navContainer' className='inline-flex'>
+            <div id='navContainer' className='w-screen inline-flex'>
                 <NavigationBar />
-                <Link href='/'>Keith Yanosy</Link>
+                <Link href='/'></Link>
             </div>
         </header>
     );
