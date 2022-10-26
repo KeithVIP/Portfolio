@@ -1,4 +1,4 @@
-import LinkedIn from '../assets/logos/linkedin.svg';
+import LinkedInLogo from '../assets/logos/linkedin.svg';
 import GitHubLogo from '../assets/logos/github.svg';
 import EmailLogo from '../assets/logos/email.svg';
 
@@ -7,21 +7,21 @@ export const contactInfo = [
         href: 'https://www.linkedin.com/in/keith-yanosy-8b174753/',
         target: '_blank',
         rel: 'noreferrer',
-        src: <LinkedIn />,
-        alt: 'email logo'
+        src: LinkedInLogo,
+        alt: 'linkedin'
     },
     {
         href: 'https://github.com/KeithVIP',
         target: '_blank',
         rel: 'noreferrer',
-        src: <GitHubLogo />,
-        alt: 'email logo'
+        src: GitHubLogo,
+        alt: 'github'
     },
     {
         href: 'mailto:KeithVIP@gmail.com"',
         target: '_blank',
         rel: 'noreferrer',
-        src: <EmailLogo />,
-        alt: 'email logo'
+        src: EmailLogo,
+        alt: 'email'
     },
 ];
