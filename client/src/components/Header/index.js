@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <div id='navContainer' className='w-screen inline-flex'>
+            <div id='navContainer' className='w-screen inline-flex items-center'>
                 <NavigationBar />
                 <Link href='/'></Link>
             </div>

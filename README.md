@@ -5,9 +5,6 @@
 
 Welcome to my Portfolio!
 
-<!-- You may visit the deployed app at [Heroku](https://intense-dusk-07819.herokuapp.com/)!
-You may visit the repository at [GitHub](https://github.com/VMLujanJr/tech-blog)! -->
-
 ## Table of Contents
 
 - [Portfolio](#portfolio)
@@ -89,7 +86,7 @@ THEN I receive a notification if I have entered an invalid email address
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 ~~~
 
-- []  WHEN I view the footer
+- [x]  WHEN I view the footer
 ~~~
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 ~~~
@@ -118,7 +115,7 @@ If you have any questions, you may direct them to Keith Yanosy using the followi
 
 ## Certification
 
-![full-stack web development](src/assets/credly/certificate300.png)
+![full-stack web development](src/assets/images/certificate.png)
 
 ## License
 

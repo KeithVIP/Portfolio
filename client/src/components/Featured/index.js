@@ -75,10 +75,10 @@ const Featured = () => {
                                 data-aos-once='false'
                                 className='laptop:absolute laptop:-bottom-24 laptop:-left-10'
                             >
-                                <p className='font-Cutive font-bold text-sm laptop:text-lg desktop:text-xl tablet:text-md text-c-white bg-c-gray drop-shadow-4xl flex flex-wrap text-justify rounded-lg p-3 laptop:max-w-xl desktop:max-w-2xl'>
+                                <p className='font-Josefin font-black text-sm laptop:text-lg desktop:text-xl tablet:text-md text-c-white bg-c-gray drop-shadow-4xl flex flex-wrap text-justify rounded-lg p-3 laptop:max-w-xl desktop:max-w-2xl'>
                                     {description}
                                 </p>
-                                <div className='font-Nanum text-c-black drop-shadow-4xl backdrop-blur-none font-bold italic text-sm flex justify-center laptop:text-lg desktop:text-xl tablet:text-md'>
+                                <div className='text-center font-Nanum text-c-black drop-shadow-4xl backdrop-blur-4 font-bold italic text-sm flex justify-center laptop:text-lg desktop:text-xl tablet:text-md'>
                                     {technologies}
                                 </div>
                             </div>

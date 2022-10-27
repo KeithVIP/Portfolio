@@ -94,7 +94,7 @@ const MenuItems = ({ items }) => {
                         rel={items.relation}
                         aria-expanded={dropdown ? "true" : "false"}
                         onClick={() => setDropdown((prev) => !prev)}
-                        className='laptop:hidden inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'
+                        className='laptop:hidden inline-flex justify-start rounded-md border px-4 py-2 text-lg font-black'
                     >
                         {items.icon}
                     </button>
