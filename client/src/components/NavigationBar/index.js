@@ -5,7 +5,7 @@ import { menuItems } from '../../utils/menuItems.js'; // a specific .js file ins
 const NavigationBar = () => {
     return (
         <nav>
-            <ul id='menuItems' className='text-c-black font-Cutive font-black p-1'>
+            <ul id='menuItems' className='text-c-black p-1 font-extrabold text-4xl'>
                 {/* .map thru menu Array */}
                 {menuItems.map((menu, index) => {
 

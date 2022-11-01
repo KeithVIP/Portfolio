@@ -105,11 +105,11 @@ const data = [
 const TechnologyList = () => {
     return (
         <section className='font-Cutive space-y-10 flex flex-col justify-center items-center'>
-            <h2 className='mt-10 font-black text-7xl desktop:text-7xl laptop:text-6xl tablet:text-5xl mobile:text-4xl'>Technologies</h2>
+            <h2 className='mt-10 font-extrabold text-7xl desktop:text-7xl laptop:text-6xl tablet:text-5xl mobile:text-4xl'>Technologies</h2>
             <div className='w-4/5 grid grid-cols-3 place-items-center gap-10 max-w-xl mt-20'>
                 {data.map(({ id, name, website, image }) => (
                     <div key={id} className=''>
-                        <a href={website} alt={name} target="_blank">
+                        <a href={website} alt={name} target="_blank" rel='noreferrer'>
                             <img
                                 key={id}
                                 src={image}
