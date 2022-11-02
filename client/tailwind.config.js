@@ -79,7 +79,8 @@ module.exports = {
         'bouncey': 'bouncey 1.5s ease-out infinite'
       },
       dropShadow: {
-        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '3xl': '1px 1px 2px rgba(3, 14, 18, 1)',
+        'shade': '1px 1px 2px rgba(3, 14, 18, 1)',
         '4xl': [
           '0 2px 2px rgba(200, 200, 150, 0.95)'
         ]

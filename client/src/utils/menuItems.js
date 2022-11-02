@@ -16,6 +16,13 @@ export const menuItems = [
                 target: '_self',
                 relation: 'no-refresher'
             },
+            {
+                title: 'Contact',
+                url: '/contact',
+                target: '_self',
+                relation: 'no-refresher'
+            },
+
         ]
     }
 ];
