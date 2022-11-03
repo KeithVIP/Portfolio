@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 /* Pages */
 import AboutPage from './pages/AboutPage.js';
+import ContactPage from './pages/ContactPage.js';
 import FeaturedPage from './pages/FeaturedPage.js';
 import IntroPage from './pages/IntroPage.js';
 import NoMatchPage from './pages/NoMatchPage.js';
@@ -44,6 +45,10 @@ const App = () => {
               <Route
                 path='/portfolio'
                 element={<FeaturedPage />}
+              />
+              <Route
+                path='/contact'
+                element={<ContactPage />}
               />
               <Route
                 path='*'

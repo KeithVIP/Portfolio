@@ -2,33 +2,44 @@ import React, { useState, useEffect, useRef } from 'react';
 import Dropdown from '../Dropdown';
 
 const MenuItems = ({ items }) => {
-    const [dropdown, setDropdown] = useState(null);
-    // const [laptopDropdown, setLaptopDropdown] = usestate(true);
     let ref = useRef(); // access the DOM elements of the dropdown by passing a reference to the target node
+
+    const [dropdown, setDropdown] = useState(Boolean); // Toggle Dropdown ON / OFF
+    const [dimensions, setDimensions] = useState({
+        height: window.innerHeight,
+        width: window.innerWidth
+    });
+
+    /*     useEffect(() => {
+            if (dimensions.width >= 1024) {
+                setDropdown(true);
+            } else if (dimensions.width < 1024) {
+                setDropdown(false);
+            }
+        }); */
+
+    /* const [onPageReload, setOnPageReload] = useState(Boolean); */
 
     /* if you click outside of the menu, the menu items will collapse */
     useEffect(() => {
         const handler = (event) => {
+
             /* I don't understand !ref.current.contains(event.target) */
-            if (dropdown && ref.current && !ref.current.contains(event.target)) {
-                setDropdown(false);
+            if (dimensions.width < 1024 && dropdown && ref.current && !ref.current.contains(event.target)) { // this fixed the click issue
+                setDropdown(false); // this is what is turning it off
             }
         };
 
         document.addEventListener('mousedown', handler);
         document.addEventListener('touchstart', handler);
+        /* document.addEventListener('load', onPageReload); */ // we should create a handler;
 
         return () => {
             // cleanup the event listener
             document.removeEventListener('mousedown', handler);
             document.removeEventListener('touchstart', handler);
         };
-    }, [dropdown]); // ...true or false...
-
-    const [dimensions, setDimensions] = useState({
-        height: window.innerHeight,
-        width: window.innerWeight
-    });
+    }, [dropdown, dimensions]); // ...true or false...
 
     useEffect(() => {
         const handleResize = () => {
@@ -42,7 +53,7 @@ const MenuItems = ({ items }) => {
 
         return () => {
             window.removeEventListener('resize', handleResize);
-        }
+        };
     });
 
     useEffect(() => {
@@ -53,21 +64,24 @@ const MenuItems = ({ items }) => {
         }
     }, [dimensions]);
 
-    /* useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth >= 1024 && !dropdown) {
+    /*     useEffect(() => {
+            if (dimensions.width >= 1024) {
                 setDropdown(true);
-            } else if (window.innerWidth < 1024 && dropdown) {
-                setDropdown(false);
             }
-            console.log(`resized to: `, window.innerWidth, `x`, window.innerHeight);
-        }
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        }
-    }); */
+        }, [onPageReload]);
+    
+        useEffect(() => {
+            const handlePageReload = () => {
+                setOnPageReload(true);
+                console.log('reloaded');
+            };
+    
+            window.addEventListeneer('load', handlePageReload);
+    
+            return () => {
+                window.removeEventListener('load', handlePageReload);
+            };
+        }); */
 
     const onMouseEnter = () => {
         window.innerWidth < 1024 && setDropdown(true);
@@ -94,7 +108,7 @@ const MenuItems = ({ items }) => {
                         rel={items.relation}
                         aria-expanded={dropdown ? "true" : "false"}
                         onClick={() => setDropdown((prev) => !prev)}
-                        className='laptop:hidden inline-flex justify-start rounded-md border px-4 py-2 text-lg font-black'
+                        className='laptop:hidden inline-flex justify-start rounded-md border px-4 py-2'
                     >
                         {items.icon}
                     </button>
