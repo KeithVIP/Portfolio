@@ -595,6 +595,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-x-0 {
   left: 0px;
   right: 0px;
@@ -669,6 +673,10 @@ video {
   height: 100vh;
 }
 
+.h-1\/5 {
+  height: 20%;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -691,10 +699,6 @@ video {
 
 .w-4\/5 {
   width: 80%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .w-6 {
@@ -897,6 +901,12 @@ video {
   gap: 2.5rem;
 }
 
+.space-x-40 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(10rem * var(--tw-space-x-reverse));
+  margin-left: calc(10rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -949,24 +959,19 @@ video {
   border-width: 1px;
 }
 
-.bg-c-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-c-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(91 204 246 / var(--tw-bg-opacity));
 }
 
+.bg-c-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-c-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(252 222 103 / var(--tw-bg-opacity));
-}
-
-.bg-c-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 64 58 / var(--tw-bg-opacity));
 }
 
 .bg-c-gray {
@@ -1050,12 +1055,20 @@ video {
   font-family: Cutive, serif;
 }
 
+.font-League {
+  font-family: League Spartan, sans-serif;
+}
+
 .font-Josefin {
   font-family: Josefin Sans, sans-serif;
 }
 
 .font-Nanum {
   font-family: Nanum Gothic, sans-serif;
+}
+
+.text-5xl {
+  font-size: 3rem;
 }
 
 .text-4xl {
@@ -1066,10 +1079,6 @@ video {
   font-size: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-}
-
 .text-sm {
   font-size: .875rem;
 }
@@ -1078,12 +1087,12 @@ video {
   font-size: 5rem;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-extrabold {
@@ -1151,6 +1160,11 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-c-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-c-blue:hover {
