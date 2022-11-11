@@ -8,6 +8,7 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "installdown": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
     "build": "cd client && npm run build",
+    "deploy": "cd client && npm run deploy",
     "//": "...comments go here"
   },
   "repository": {
