@@ -186,7 +186,7 @@ React
 Node.js
 adaaaaaa
 
-Possible bugs 
+<!-- Possible bugs 
 
 - On PAGE RELOAD, the NAVIGATION MENU DOES NOT SHOW UP(ONLY in >1024).
-- On PAGE RESIZE, we need to LIMIT the event to every second or 1000 miliseconds
+- On PAGE RESIZE, we need to LIMIT the event to every second or 1000 miliseconds -->
