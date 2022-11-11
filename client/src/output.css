@@ -1158,13 +1158,13 @@ video {
   background-color: rgb(91 204 246 / var(--tw-bg-opacity));
 }
 
-.hover\:font-bold:hover {
-  font-weight: 700;
+.hover\:font-black:hover {
+  font-weight: 900;
 }
 
-.hover\:text-c-white:hover {
+.hover\:text-c-black:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(3 14 18 / var(--tw-text-opacity));
 }
 
 .hover\:text-c-blue:hover {
@@ -1172,19 +1172,14 @@ video {
   color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
-.active\:bg-c-white:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.active\:text-c-blue:active {
+  --tw-text-opacity: 1;
+  color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
 .active\:text-c-white:active {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.active\:text-c-blue:active {
-  --tw-text-opacity: 1;
-  color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
 @media (min-width: 360px) {
@@ -1210,12 +1205,12 @@ video {
     max-width: 28rem;
   }
 
-  .tablet\:text-6xl {
-    font-size: 4rem;
-  }
-
   .tablet\:text-5xl {
     font-size: 3rem;
+  }
+
+  .tablet\:text-6xl {
+    font-size: 4rem;
   }
 }
 
@@ -1321,12 +1316,12 @@ video {
     font-size: 2.25rem;
   }
 
-  .laptop\:text-lg {
-    font-size: 1.125rem;
-  }
-
   .laptop\:text-6xl {
     font-size: 4rem;
+  }
+
+  .laptop\:text-lg {
+    font-size: 1.125rem;
   }
 }
 
@@ -1347,11 +1342,11 @@ video {
     max-width: 42rem;
   }
 
-  .desktop\:text-xl {
-    font-size: 1.25rem;
-  }
-
   .desktop\:text-7xl {
     font-size: 5rem;
+  }
+
+  .desktop\:text-xl {
+    font-size: 1.25rem;
   }
 } ;

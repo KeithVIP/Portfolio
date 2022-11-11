@@ -58,19 +58,19 @@ const Contact = () => {
 
     return (
         <form id='contact-form' ref={form} onSubmit={sendEmail} className='h-screen flex flex-col justify-center items-center'>
-            <h2 className='font-Josefin font-bold text-5xl tablet:text-6xl laptop:text-7xl desktop:text-8xl'>Contact</h2>
+            <h2 className='font-Cutive font-bold text-5xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Contact</h2>
             <div className='bg-c-blue rounded-lg p-4 drop-shadow-shade flex flex-col space-y-2 w-full max-w-sm'>
                 <input type="hidden" name="contact_number" />
                 <div className='flex justify-start items-center'>
-                    <label className='w-1/'>Name</label>
+                    <label className='w-1/ px-2 text-c-white font-bold'>Name</label>
                     <input type='text' name='user_name' placeholder="What's your name?" value={name} onInput={(e) => setName(e.target.value)} className='flex flex-wrap text-center rounded-lg w-4/5' />
                 </div>
                 <div className='flex justify-start items-center'>
-                    <label className='w-1/'>E-mail</label>
+                    <label className='w-1/ px-2 text-c-white font-bold'>E-mail</label>
                     <input type='email' name='user_email' placeholder="What's your e-mail?" value={email} onInput={(e) => setEmail(e.target.value)} className='flex flex-wrap text-center rounded-lg w-4/5' />
                 </div>
                 <textarea type='text' name='message' placeholder="What's your message?" value={message} onChange={(e) => setMessage(e.target.value)} className='rounded-lg p-2' />
-                <button value="Send" className='hover:font-bold hover:text-c-white hover:bg-c-blue active:bg-c-white'>Send</button>
+                <button value="Send" className='hover:font-black hover:text-c-black hover:bg-c-blue active:text-c-blue text-c-white font-bold'>Send</button>
             </div>
         </form>
     );
