@@ -47,7 +47,7 @@ const Featured = () => {
             <ul id='container' className='customViewHeight flex flex-col items-center'>
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
                     <li key={id} className='flex flex-col justify-center items-center mobile:max-w-xs tablet:max-w-md laptop:max-w-xl desktop:max-w-2xl'>
-                        <h2 className='font-black font-Cutive flex text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl text-center'>{name}</h2>
+                        <h2 className='font-black font-Josefin flex text-5xl tablet:text-6xl laptop:text-7xl desktop:text-8xl text-center'>{name}</h2>
                         <div className="laptop:relative flex flex-col justify-center items-center">
                             <a href={website} alt={alt} target='_blank' rel='noreferrer'>
                                 <img
@@ -75,7 +75,7 @@ const Featured = () => {
                                 data-aos-once='false'
                                 className='laptop:absolute laptop:-bottom-24 laptop:-left-10'
                             >
-                                <p className='font-Josefin font-black text-sm laptop:text-lg desktop:text-xl tablet:text-md text-c-white bg-c-gray drop-shadow-4xl flex flex-wrap text-justify rounded-lg p-3 laptop:max-w-xl desktop:max-w-2xl'>
+                                <p className='font-Josefin font-black text-sm laptop:text-lg desktop:text-xl tablet:text-md text-c-white bg-c-gray drop-shadow-shade flex flex-wrap text-justify rounded-lg p-3 laptop:max-w-xl desktop:max-w-2xl'>
                                     {description}
                                 </p>
                                 <div className='text-center font-Nanum text-c-black drop-shadow-4xl backdrop-blur-4 font-bold italic text-sm flex justify-center laptop:text-lg desktop:text-xl tablet:text-md'>

@@ -58,8 +58,8 @@ const Contact = () => {
 
     return (
         <form id='contact-form' ref={form} onSubmit={sendEmail} className='h-screen flex flex-col justify-center items-center'>
-            <h2 className='font-bold text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Contact Form</h2>
-            <div className='bg-c-yellow rounded-lg p-4 drop-shadow-shade flex flex-col space-y-2 w-full max-w-sm'>
+            <h2 className='font-Josefin font-bold text-5xl tablet:text-6xl laptop:text-7xl desktop:text-8xl'>Contact</h2>
+            <div className='bg-c-blue rounded-lg p-4 drop-shadow-shade flex flex-col space-y-2 w-full max-w-sm'>
                 <input type="hidden" name="contact_number" />
                 <div className='flex justify-start items-center'>
                     <label className='w-1/'>Name</label>

@@ -17,7 +17,7 @@ const Dropdown = ({ submenus, dropdown }) => {
                 </li>
             ))}
             <li>
-                <a href='https://drive.google.com/file/d/14pWkHgmXBEBiEWw61Qw-dj4jMdJHQOv7/view?usp=sharing' target='_blank' rel='noreferrer' className='hover:text-c-blue block px-4 py-2 text-2xl animate-nav3-down laptop:animate-nav3-slide active:text-c-white drop-shadow-xl font-Josefin'>Resume</a>
+                <a href='https://drive.google.com/file/d/1BRclPQ5q0Y-SMY3bEt1ana2lWFY-pyZV/view?usp=sharing' target='_blank' rel='noreferrer' className='hover:text-c-blue block px-4 py-2 text-2xl animate-nav3-down laptop:animate-nav3-slide active:text-c-white drop-shadow-xl font-Josefin'>Resume</a>
             </li>
         </ul>
     );
