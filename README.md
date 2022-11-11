@@ -168,7 +168,7 @@ Portfolio should link to:
 - Projects
 - Email (pop up)
 
-- Click on Resume 'Nav'; modal populates whole page; close icon, View PDF, Re-size, Download.
+<!-- - Click on Resume 'Nav'; modal populates whole page; close icon, View PDF, Re-size, Download. -->
 
 Chrome DevTools
 Markdown
