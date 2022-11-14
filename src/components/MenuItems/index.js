@@ -83,20 +83,10 @@ const MenuItems = ({ items }) => {
             };
         }); */
 
-    const onMouseEnter = () => {
-        window.innerWidth < 1024 && setDropdown(true);
-    };
-
-    const onMouseLeave = () => {
-        window.innerWidth < 1024 && setDropdown(false);
-    };
-
     return (
         <li
             id='menuItem'
             ref={ref}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
         >
             {items.submenu && (
                 <>

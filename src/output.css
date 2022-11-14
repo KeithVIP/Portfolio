@@ -603,29 +603,12 @@ video {
   position: relative;
 }
 
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
-}
-
 .left-10 {
   left: 2.5rem;
 }
 
 .right-10 {
   right: 2.5rem;
-}
-
-.-bottom-1 {
-  bottom: -0.25rem;
-}
-
-.-right-1 {
-  right: -0.25rem;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .-bottom-2 {
@@ -1005,17 +988,9 @@ video {
   background-color: rgb(54 54 54 / var(--tw-bg-opacity));
 }
 
-.bg-c-tblack {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .bg-c-black {
   --tw-bg-opacity: 1;
   background-color: rgb(3 14 18 / var(--tw-bg-opacity));
-}
-
-.bg-c-tblue {
-  background-color: rgba(0, 0, 255, 0.4);
 }
 
 .bg-paper {
@@ -1050,16 +1025,16 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -1191,13 +1166,6 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-75:hover {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1214,10 +1182,6 @@ video {
   font-weight: 900;
 }
 
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
 .hover\:text-c-black:hover {
   --tw-text-opacity: 1;
   color: rgb(3 14 18 / var(--tw-text-opacity));
@@ -1231,11 +1195,6 @@ video {
 .hover\:text-c-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:ring-c-yellow:hover {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(252 222 103 / var(--tw-ring-opacity));
 }
 
 .hover\:ring-c-blue:hover {
