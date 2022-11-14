@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const ContactPage = () => {
     return (
         <>
-            <div className='bg-paper'>
+            <div className='bg-paper text-c-black'>
                 <Header />
                 {/* <div className='relative h-screen flex justify-center items-center space-x-40'>
                 <h2 className='font-League font-bold bg-c-blue text-5xl h-1/5 w-full flex justify-start items-center'>Hey, let's talk...</h2>

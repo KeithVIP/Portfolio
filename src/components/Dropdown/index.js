@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Dropdown = ({ submenus, dropdown }) => {
     return (
-        <ul id='dropdown' className={`${dropdown ? 'inline' : 'hidden'} absolute flex flex-col laptop:flex-row rounded-md text-c-black font-black laptop:rounded-none laptop:bg-opacity-0 drop-shadow-xl bg-c-white`}>
+        <ul id='dropdown' className={`${dropdown ? 'inline' : 'hidden'} absolute flex flex-col laptop:flex-row rounded-md font-black laptop:rounded-none laptop:bg-opacity-0 drop-shadow-xl bg-c-white`}>
             {submenus.map((submenu, index) => (
                 <li key={index}>
                     <Link

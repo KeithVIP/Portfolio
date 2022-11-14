@@ -8,7 +8,7 @@ import Header from '../components/Header';
 const AboutPage = () => {
     return (
         <>
-            <div className='bg-paper bg-cover bg-fixed w-full h-full z-0'>
+            <div className='bg-paper bg-cover bg-fixed w-full h-full z-0 text-c-black'>
                 <Header />
                 <Hero />
                 <About />

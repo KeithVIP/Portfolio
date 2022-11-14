@@ -5,7 +5,7 @@ import Header from '../components/Header';
 
 const FeaturedPage = () => {
     return (
-        <div className='bg-paper bg-repeat w-full h-full'>
+        <div className='bg-paper bg-repeat text-c-black w-full h-full'>
             <Header />
             <Featured />
             <Footer />

@@ -30,7 +30,8 @@ module.exports = {
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
       'c-shade': '#393939',
-      'c-tblack': 'rgba(0, 0, 0, 0.7)',
+      'c-tblack': 'rgba(0, 0, 0, 0.4)',
+      'c-tblue': 'rgba(0, 0, 255, 0.4)',
       'c-tgray': 'rgba(54, 54, 54, 0.9)'
     },
     backgroundImage: {
@@ -58,6 +59,15 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+    },
+    minHeight: {
+      '0': '0px',
+      'full': '100%',
+      'screen': '100vh',
+      'screen-80': '80vh',
+      'min': 'min-content',
+      'max': 'max-content',
+      'fit': 'fit-content',
     },
     extend: {
       animation: {
