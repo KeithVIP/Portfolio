@@ -27,7 +27,7 @@ const Featured = () => {
             id: '2',
             name: 'Slayers',
             description: 'This web application allows a user to create a character, build basic statistics, and create or join a party through the use of simple input.',
-            website: 'https://vercel.com/vmlujanjr/mini-factory',
+            website: 'https://mini-factory.vercel.app/',
             github: 'https://github.com/VMLujanJr/mini-factory',
             alt: 'slayers',
             technologies: 'JavaScript, HTML, CSS, Node.js, Express, MySql, Dotenv, Bcrypt, Jest. TailwindCSS',
