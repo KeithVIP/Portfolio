@@ -37,7 +37,7 @@ const Featured = () => {
             id: '3',
             name: 'Book Search Engine',
             description: 'Take a fully functioning Google Books API search engine built with a Restful API, and refactor it to be a GraphQL API built with Apollo Server.',
-            website: 'https://calm-badlands-97625.herokuapp.com/',
+            website: 'https://book-search-engine-keithvip.vercel.app/',
             github: 'https://github.com/KeithVIP/Book-Search-Engine',
             alt: 'googlebook',
             technologies: 'Mern, React, MongoDB, Node.js',
