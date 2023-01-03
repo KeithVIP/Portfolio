@@ -46,7 +46,7 @@ const Featured = () => {
         {
             id: '3',
             name: 'Deep-Thoughts',
-            description: 'Deep Thoughts is a social media app where users can create thoughts, add reactions to other users thoughts, and add other users to their friend list. Users can also view their own profile with their thoughts listed out, or view other users profiles with all of their thoughts listed.',
+            description: 'Deep Thoughts is a social media app where users can create thoughts, add reactions to other users thoughts, and add other users to their friend list.',
             website: 'http://3.128.29.230/',
             github: 'https://github.com/KeithVIP/aws-thought',
             alt: 'googlebook',
