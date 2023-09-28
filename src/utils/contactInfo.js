@@ -18,7 +18,7 @@ export const contactInfo = [
         alt: 'github'
     },
     {
-        href: 'mailto:KeithVIP@gmail.com"',
+        href: 'mailto:keithyanosy@gmail.com"',
         target: '_blank',
         rel: 'noreferrer',
         src: EmailLogo,
